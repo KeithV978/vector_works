@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="28.711666mm"
+   height="26.791527mm"
+   viewBox="0 0 28.711666 26.791527"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   >
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1">
+      <stop
+         style="stop-color:#c766ef;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#e45bbe;stop-opacity:1;"
+         offset="0.45253167"
+         id="stop3" />
+      <stop
+         style="stop-color:#00ffbd;stop-opacity:1;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <rect
+       x="306.39844"
+       y="405.23666"
+       width="389.70496"
+       height="444.77194"
+       id="rect1" />
+    <linearGradient
+       href="#linearGradient1"
+       id="linearGradient2"
+       x1="309.30341"
+       y1="425.92593"
+       x2="339.49695"
+       y2="500.66541"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-77.149561,-101.43826)">
+    <text
+       transform="matrix(0.49181593,0,0,0.54033356,-74.01275,-129.92666)"
+       id="text1"
+       style="font-size:26.6667px;font-family:Stencil;-inkscape-font-specification:'Stencil, Normal';white-space:pre;shape-inside:url(#rect1);fill:url(#linearGradient2);stroke:#40cd46;stroke-width:4.28976"><tspan
+         x="306.39844"
+         y="476.76977"
+         id="tspan3"><tspan
+           style="font-size:93.3333px;font-family:'Colonna MT';-inkscape-font-specification:'Colonna MT, Normal';stroke:none"
+           id="tspan2">V</tspan></tspan></text>
+  </g>
+</svg>
