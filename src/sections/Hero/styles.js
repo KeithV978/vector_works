@@ -1,6 +1,6 @@
 import { styled } from "@mui/material";
 // import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
 
 export const Wrapper = styled("section")(({ theme }) => ({
@@ -89,29 +89,39 @@ export const TextGradient = styled("div")(({ theme }) => ({
   fontFamily: "Righteous-Regular",
 }));
 
-export const HeroButton = styled(Button)(({ theme }) => ({
-  width: "180px",
-  //   padding: "auto 3rem",
-  //   display: "flex",
-  // background: `linear-gradient(240deg, ${[
-  //   theme.palette.primary.main,
-  // ]} 0.001%, ${[theme.palette.secondary.main]})`,
-  background: "#fff",
-  color: "#1c1c1c",
-  borderRadius: "20px",
-  boxShadow: "8px 7px 17px 0px #1e1e1e69",
-  transition: "all ease .3s",
-  border: "1px solid #fff",
-  fontWeight: 600,
-  "&:hover": {
-    boxShadow: "none",
-    color: "#fff",
-  },
-  [theme.breakpoints.up("sm")]: {
-    marginTop: "1rem",
-    width: "200px",
-  },
-}));
+// export const HeroButton = styled(Button)(({ theme }) => ({
+//   width: "180px",
+//   //   padding: "auto 3rem",
+//   //   display: "flex",
+//   // background: `linear-gradient(240deg, ${[
+//   //   theme.palette.primary.main,
+//   // ]} 0.001%, ${[theme.palette.secondary.main]})`,
+//   background: "#fff",
+//   color: "#1c1c1c",
+//   borderRadius: "20px",
+//   boxShadow: "8px 7px 17px 0px #1e1e1e69",
+//   transition: "all ease .3s",
+//   border: "1px solid #fff",
+//   fontWeight: 600,
+
+//   [theme.breakpoints.up("sm")]: {
+//     marginTop: "1rem",
+//     width: "200px",
+//   },
+//   display: "flex",
+//   flexDirection: "column",
+//   overflowY: "hidden",
+//   // padding: "1rem 0 0",
+//   position: "relative",
+//   "& .before": {
+//     position: "absolute",
+//     top: 0,
+//     transition: "all ease .3s",
+//   },
+//   "&:hover .before": {
+//     marginTop: "-2rem",
+//   },
+// }));
 
 export const BottomArrow = styled(motion.div)(({ theme }) => ({
   position: "absolute",

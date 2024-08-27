@@ -1,8 +1,9 @@
 import React from "react";
 import { CardImage, CardText, CardWrapper } from "./styles";
 import { Typography } from "@mui/material";
-import { HeroButton } from "../Hero/styles";
+
 import { EyeIcon } from "hugeicons-react";
+import { Button } from "../../components/Button";
 
 export const ProjectCard = ({ data }) => {
   return (
@@ -42,7 +43,7 @@ export const ProjectCard = ({ data }) => {
         >
           {data.text}
         </Typography>
-        <HeroButton
+        <Button
           sx={{
             margin: "auto",
             display: "flex",
@@ -53,7 +54,7 @@ export const ProjectCard = ({ data }) => {
           href={data.link}
         >
           See Live <EyeIcon style={{ width: "18px", marginLeft: ".5rem" }} />
-        </HeroButton>
+        </Button>
       </CardText>
     </CardWrapper>
   );

@@ -4,7 +4,7 @@ import AIRobot from "../../assets/images/hero/ai-robot.png";
 import {
   BottomArrow,
   Circles,
-  HeroButton,
+  // HeroButton,
   HeroContents,
   HeroImage,
   HeroText,
@@ -13,6 +13,7 @@ import {
   Wrapper,
 } from "./styles";
 import { ArrowDown04Icon, ArrowRight04Icon } from "hugeicons-react";
+import { Button } from "../../components/Button";
 
 export const Hero = () => {
   return (
@@ -35,9 +36,9 @@ export const Hero = () => {
             state-of-the-art digital solutions.
           </Typography>
 
-          <HeroButton>
+          <Button>
             Learn More <ArrowRight04Icon />
-          </HeroButton>
+          </Button>
         </HeroText>
       </HeroContents>
       <BottomArrow
