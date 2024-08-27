@@ -16,11 +16,11 @@ let theme = createTheme({
   },
   typography: {
     fontFamily: "Comme, Balthazar, Righteous,  Arial, sans-serif",
-    h3: {
+    h2: {
       fontFamily: '"Righteous", "Open-Sans"',
       color: "#fff",
     },
-    h5: {
+    h4: {
       fontFamily: "Balthazar",
       color: "#fff",
       fontWeight: 700,

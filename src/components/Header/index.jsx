@@ -79,20 +79,35 @@ const Header = React.memo(() => {
               </Li>
             </a>
             {/* <a> */}
-            <Stack direction="row" spacing={1}>
+            <Stack direction="row" spacing={2}>
               <a href="tel:+1234567890">
                 <Li component="li" variant="body2">
-                  <Call02Icon style={{ width: "20px" }} />
+                  <Call02Icon
+                    style={{
+                      width: "20px",
+                      // color: "#1c1c1c",
+                    }}
+                  />
                 </Li>
               </a>
               <a href="https://t.me/">
                 <Li component="li" variant="body2">
-                  <TelegramIcon style={{ width: "20px" }} />
+                  <TelegramIcon
+                    style={{
+                      width: "20px",
+                      // color: "#1c1c1c",
+                    }}
+                  />
                 </Li>
               </a>
               <a href="https://wa.me/+234567890">
                 <Li component="li" variant="body2">
-                  <WhatsappBusinessIcon style={{ width: "20px" }} />
+                  <WhatsappBusinessIcon
+                    style={{
+                      width: "20px",
+                      // color: "#1c1c1c",
+                    }}
+                  />
                 </Li>
               </a>
             </Stack>

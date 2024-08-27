@@ -25,12 +25,17 @@ export const Heading = ({
         borderRight: borderRight ? borderRight : "",
         borderImage: borderImage ? borderImage : "auto",
         borderColor: borderColor ? borderColor : "#fff",
-        padding: padding ? padding : "1rem",
+        padding: padding ? padding : ".5rem",
         borderRadius: radius ? radius : "20px",
         margin: margin ? margin : "1rem initial",
       }}
     >
-      <Typography textTransform="uppercase" variant="h5" color="inherit">
+      <Typography
+        textTransform="uppercase"
+        variant="h4"
+        color="inherit"
+        fontWeight={700}
+      >
         {children}
       </Typography>
     </Box>

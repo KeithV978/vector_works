@@ -4,7 +4,8 @@ import { styled } from "@mui/material";
 
 export const Wrapper = styled("section")(({ theme }) => ({
   position: "relative",
-  height: "80vh",
+  // minHeight: "80vh",
+  textAlign: "center",
   [theme.breakpoints.up("sm")]: {
     margin: "3rem auto",
     "&::before": {
@@ -15,7 +16,7 @@ export const Wrapper = styled("section")(({ theme }) => ({
       transform: "translate(-50%, -50%)",
       height: "60%",
       width: "40%",
-      background: `linear-gradient(248deg, #25322F, #25322F)`,
+      background: `linear-gradient(248deg, #4c6e66, #25322F)`,
       zIndex: -1,
       filter: "blur(55px)",
       // border: "5px solid #fff",
@@ -26,5 +27,5 @@ export const Wrapper = styled("section")(({ theme }) => ({
 
 export const Image = styled("img")(({ theme }) => ({
   width: "45px",
-  margin: ".5rem 1rem",
+  margin: ".5rem 0",
 }));

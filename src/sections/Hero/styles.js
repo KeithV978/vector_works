@@ -17,7 +17,7 @@ export const Wrapper = styled("section")(({ theme }) => ({
     right: "59%",
     // transform: "translate(-50%, -50%)",
     height: "80%",
-    width: "5%",
+    width: "15%",
     // backgroundColor: `${[theme.palette.secondary.main]}`,
     zIndex: -1,
     filter: "blur(55px)",
@@ -34,7 +34,7 @@ export const Wrapper = styled("section")(({ theme }) => ({
     left: "59%",
     // transform: "translate(-50%, -50%)",
     height: "80%",
-    width: "5%",
+    width: "15%",
     filter: "blur(55px)",
     zIndex: -1,
     rotate: "45deg",
@@ -51,7 +51,7 @@ export const HeroContents = styled("div")(({ theme }) => ({
   flexDirection: "row",
   justifyContent: "center",
   [theme.breakpoints.up("sm")]: {
-    width: "70%",
+    width: "90%",
   },
 }));
 export const HeroImage = styled("div")(({ theme }) => ({
@@ -92,19 +92,23 @@ export const HeroButton = styled(Button)(({ theme }) => ({
   width: "180px",
   //   padding: "auto 3rem",
   //   display: "flex",
-  background: `linear-gradient(240deg, ${[
-    theme.palette.primary.main,
-  ]} 0.001%, ${[theme.palette.secondary.main]})`,
-  color: "#fff",
+  // background: `linear-gradient(240deg, ${[
+  //   theme.palette.primary.main,
+  // ]} 0.001%, ${[theme.palette.secondary.main]})`,
+  background: "#fff",
+  color: "#1c1c1c",
   borderRadius: "20px",
   boxShadow: "8px 7px 17px 0px #1e1e1e69",
   transition: "all ease .3s",
+  border: "1px solid #fff",
+  fontWeight: 600,
+  "&:hover": {
+    boxShadow: "none",
+    color: "#fff",
+  },
   [theme.breakpoints.up("sm")]: {
     marginTop: "1rem",
     width: "200px",
-  },
-  "&:hover": {
-    boxShadow: "none",
   },
 }));
 

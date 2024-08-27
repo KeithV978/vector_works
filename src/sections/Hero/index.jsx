@@ -1,4 +1,5 @@
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
 import AIRobot from "../../assets/images/hero/ai-robot.png";
 import {
   BottomArrow,
@@ -25,7 +26,7 @@ export const Hero = () => {
               VectorWorks
             </Typography>
           </TextGradient>
-          <Typography variant="h3" fontWeight={600} marginBottom="1rem">
+          <Typography variant="h2" fontWeight={600} marginBottom="1rem">
             BRINGING YOUR WEB3 DREAMS TO LIFE.
           </Typography>
           <Typography variant="h6" width={400}>
@@ -46,8 +47,11 @@ export const Hero = () => {
           repeatType: "reverse",
           duration: 1,
         }}
+        style={{ cursor: "pointer" }}
       >
-        <ArrowDown04Icon size={40} />
+        <Link href="#about" color="inherit">
+          <ArrowDown04Icon size={40} />
+        </Link>
       </BottomArrow>
     </Wrapper>
   );
