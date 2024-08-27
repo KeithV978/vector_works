@@ -18,7 +18,7 @@ import {
   Wrapper,
 } from "./styles";
 import {
-  Call02Icon,
+  Mail01Icon,
   TelegramIcon,
   WhatsappBusinessIcon,
 } from "hugeicons-react";
@@ -82,7 +82,7 @@ const Header = React.memo(() => {
             <Stack direction="row" spacing={2}>
               <a href="tel:+1234567890">
                 <Li component="li" variant="body2">
-                  <Call02Icon
+                  <Mail01Icon
                     style={{
                       width: "20px",
                       // color: "#1c1c1c",

@@ -22,14 +22,29 @@ const Wrapper = styled(Btn)(({ theme }) => ({
   //   theme.palette.tertiary.main,
   // ]}, ${[theme.palette.primary.main]})`,
 
-  // "&:hover": {
   // background: "#fff",
   //   boxShadow: "none",
   //   width: "190px",
 
   //   background: ` ${[theme.palette.primary.main]}`,
+
+  // "&:hover": {
+  //   content: '"Hovered"',
   // },
 }));
 export const Button = ({ children }) => {
-  return <Wrapper variant="contained">{children}</Wrapper>;
+  return (
+    <Wrapper
+      variant="contained"
+      sx={{
+        "&::before": {
+          content: '"Learn More"',
+        },
+
+        "&:hover::before": {
+          content: '"Learn More"',
+        },
+      }}
+    ></Wrapper>
+  );
 };

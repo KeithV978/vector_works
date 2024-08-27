@@ -5,6 +5,7 @@ import Container from "@mui/material/Container";
 import { Services } from "../../sections/Services";
 import { Portfolio } from "../../sections/Portfolio";
 import { Contact } from "../../sections/Contact";
+import { FAQs } from "../../sections/FAQs";
 
 const Home = () => {
   document.title = "Home - Vector Works";
@@ -15,6 +16,7 @@ const Home = () => {
         <About />
         <Services />
         <Portfolio />
+        <FAQs />
         <Contact />
       </Container>
     </main>

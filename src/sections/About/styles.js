@@ -2,7 +2,7 @@ import { styled } from "@mui/material";
 
 export const Wrapper = styled("section")(({ theme }) => ({
   width: "100%",
-  minHeight: "80vh",
+  // minHeight: "80vh",
   position: "relative",
   display: "flex",
   justifyContent: "center",

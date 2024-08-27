@@ -3,6 +3,7 @@ import Link from "@mui/material/Link";
 import AIRobot from "../../assets/images/hero/ai-robot.png";
 import {
   BottomArrow,
+  Circles,
   HeroButton,
   HeroContents,
   HeroImage,
@@ -53,6 +54,18 @@ export const Hero = () => {
           <ArrowDown04Icon size={40} />
         </Link>
       </BottomArrow>
+      <Circles>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </Circles>
     </Wrapper>
   );
 };
