@@ -31,28 +31,43 @@ export const Logo = styled("img")(({ theme }) => ({
   // [theme.breakpoints.up("sm")]: {},
 }));
 export const Nav = styled("nav")(({ theme }) => ({
-  width: "100%",
-
+  width: "0%",
+  // position: "relative",
   [theme.breakpoints.up("sm")]: {
-    width: "50%",
+    width: "80%",
+  },
+  [theme.breakpoints.up("md")]: {
+    width: "60%",
   },
 }));
 export const Ul = styled("ul")(({ theme }) => ({
-  margin: 0,
-  listStyle: "none",
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "space-between",
-  width: "100%",
-  [theme.breakpoints.up("sm")]: {},
+  display: "none",
+  [theme.breakpoints.up("sm")]: {
+    display: "flex",
+    margin: 0,
+    listStyle: "none",
+    width: "100%",
+    height: "100%",
+    justifyContent: "space-between",
+    alignItems: "center",
+    position: "relative",
+    flexDirection: "row",
+  },
 }));
 export const Li = styled(Typography)(({ theme }) => ({
+  listStyle: "none",
   transition: "all ease .3s",
   textTransform: "uppercase",
+  // fontWeight: 600,
+  letterSpacing: ".1rem",
   "&:hover": {
     color: `${[theme.palette.tertiary.main]}`,
   },
   "&:active": {
     color: `${[theme.palette.tertiary.main]}`,
+  },
+  [theme.breakpoints.up("sm")]: {
+    position: "relative",
+    flexDirection: "row",
   },
 }));

@@ -12,7 +12,10 @@ import {
   TextGradient,
   Wrapper,
 } from "./styles";
-import { ArrowDown04Icon, ArrowRight04Icon } from "hugeicons-react";
+import {
+  ArrowDownDoubleIcon,
+  //  ArrowRight04Icon
+} from "hugeicons-react";
 import { Button } from "../../components/Button";
 
 export const Hero = () => {
@@ -37,7 +40,8 @@ export const Hero = () => {
           </Typography>
 
           <Button>
-            Learn More <ArrowRight04Icon />
+            Learn More
+            {/* <ArrowRight04Icon /> */}
           </Button>
         </HeroText>
       </HeroContents>
@@ -52,7 +56,7 @@ export const Hero = () => {
         style={{ cursor: "pointer" }}
       >
         <Link href="#about" color="inherit">
-          <ArrowDown04Icon size={40} />
+          <ArrowDownDoubleIcon size={40} />
         </Link>
       </BottomArrow>
       <Circles>

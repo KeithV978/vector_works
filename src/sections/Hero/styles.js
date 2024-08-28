@@ -4,11 +4,11 @@ import { styled } from "@mui/material";
 import { motion } from "framer-motion";
 
 export const Wrapper = styled("section")(({ theme }) => ({
+  width: "100%",
+  minHeight: "100vh",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  width: "100%",
-  minHeight: "100vh",
   position: "relative",
   // background: `linear-gradient(180deg, transparent 50%, #1c1c1c)`,
   "&::before": {

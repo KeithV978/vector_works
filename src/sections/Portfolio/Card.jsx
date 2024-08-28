@@ -1,19 +1,19 @@
 import React from "react";
-import { CardImage, CardText, CardWrapper } from "./styles";
-import { Typography } from "@mui/material";
-
+import Typography from "@mui/material/Typography";
 import { EyeIcon } from "hugeicons-react";
+import { CardImage, CardText, CardWrapper } from "./styles";
 import { Button } from "../../components/Button";
 
 export const ProjectCard = ({ data }) => {
   return (
-    <CardWrapper item xs={12} sm={3}>
+    <CardWrapper>
       <CardImage
         sx={{
           transition: "ease all .3s",
           "&:hover + div.cont": {
-            display: "block",
-            opacity: 1,
+            // display: "block",
+            // opacity: 1,
+            height: "100%",
           },
         }}
       >
@@ -43,16 +43,7 @@ export const ProjectCard = ({ data }) => {
         >
           {data.text}
         </Typography>
-        <Button
-          sx={{
-            margin: "auto",
-            display: "flex",
-            background: "none",
-            color: "white",
-            border: "1px solid #fff",
-          }}
-          href={data.link}
-        >
+        <Button href={data.link}>
           See Live <EyeIcon style={{ width: "18px", marginLeft: ".5rem" }} />
         </Button>
       </CardText>

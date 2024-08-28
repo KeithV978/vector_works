@@ -8,9 +8,9 @@ import { Contact } from "../../sections/Contact";
 import { FAQs } from "../../sections/FAQs";
 
 const Home = () => {
-  document.title = "Home - Vector Works";
+  document.title = "Vector Works";
   return (
-    <main>
+    <main style={{ width: "100%" }}>
       <Hero />
       <Container>
         <About />

@@ -1,6 +1,6 @@
 import { styled } from "@mui/material";
 import Box from "@mui/material/Box";
-// import Stack from "@mui/material/Stack";
+import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
@@ -28,8 +28,10 @@ export const NumbersWrapper = styled("div")(({ theme }) => ({
 export const NumberCase = styled(Box)(({ theme }) => ({
   minWidth: "fit-content",
   textAlign: "center",
-  borderLeft: "1px solid #fff",
   paddingLeft: ".5rem",
+  [theme.breakpoints.up("sm")]: {
+    borderLeft: "1px solid #fff",
+  },
 }));
 export const Number = styled(Typography)(({ theme }) => ({
   color: `${[theme.palette.primary.main]}`,
@@ -37,11 +39,12 @@ export const Number = styled(Typography)(({ theme }) => ({
   textAlign: "center",
 }));
 
-export const PortWrapper = styled(Grid)(({ theme }) => ({
+export const CardContainer = styled(Grid)(({ theme }) => ({
   flexDirection: "column",
+  flexWrap: "wrap",
   [theme.breakpoints.up("sm")]: {
-    justifyContent: "space-between",
-    alignItems: "space-around",
+    // justifyContent: "space-between",
+    // alignItems: "space-around",
     flexDirection: "row",
   },
 }));
@@ -56,24 +59,22 @@ export const GradNumber = styled("div")(({ theme }) => ({
   fontFamily: "Righteous-Regular",
 }));
 
-export const CardWrapper = styled(Grid)(({ theme }) => ({
+export const CardWrapper = styled(Card)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
-  // justifyContent: "space-between",
   alignItems: "center",
   maxWidth: "100%",
-  // height: "20vh",
   backgroundColor: "#1c1c1c",
-  padding: "1rem",
+  padding: "2rem 1rem",
   transition: "ease all .3s",
   position: "relative",
-  // margin: "1rem auto",
+  border: "2px solid grey",
+  borderRadius: "10px",
+  boxShadow: "4px 6px 10px #101010",
   [theme.breakpoints.up("sm")]: {
-    borderRadius: "15px",
-    // border: "1px solid grey",
+    borderRadius: "20px",
     maxWidth: "360px",
   },
-  boxShadow: "4px 6px 10px #101010",
 }));
 export const CardImage = styled("div")(({ theme }) => ({
   width: "90%",
@@ -93,6 +94,10 @@ export const CardImage = styled("div")(({ theme }) => ({
 
 export const CardText = styled("div")(({ theme }) => ({
   transition: "ease all .3s",
-  // display: "none",
+  // height: 0,
+  display: "flex",
+  flexDirection: "column",
+  justifyCcontent: "center",
+  alignItems: "center",
   // opacity: 0,
 }));

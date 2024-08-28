@@ -11,7 +11,7 @@ import Box from "@mui/material/Box";
 import { PortfolioWrapper } from "./PortfolioWrapper";
 import { Heading } from "../../components/Heading";
 import { Button } from "../../components/Button";
-import { ArrowUpRight02Icon } from "hugeicons-react";
+// import { ArrowUpRight02Icon } from "hugeicons-react";
 
 export const Portfolio = () => {
   return (
@@ -48,10 +48,8 @@ export const Portfolio = () => {
         </Box>
       </Wrapper>
       <PortfolioWrapper />
-      <div style={{ margin: "2rem auto", width: "fit-content" }}>
-        <Button>
-          View All Projects <ArrowUpRight02Icon />
-        </Button>
+      <div style={{ margin: "3rem auto", width: "fit-content" }}>
+        <Button>View All</Button>
       </div>
     </section>
   );

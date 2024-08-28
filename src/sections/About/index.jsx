@@ -22,17 +22,19 @@ const About = () => {
         }}
       >
         <Typography variant="h6" textAlign="left">
-          <Colorbar /> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          <Colorbar sx={{ marginLeft: 0 }} /> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
           <Colorbar sx={{ width: "20%" }} /> Lorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          sed do eiusmod tempor incididunt ut labore et dolore t, sed do eiusmod
-          tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet,
-          consectetur adipiscing. <Colorbar sx={{ width: "19%" }} />
+          adipiscing elit, sed do eiusmod <Colorbar sx={{ width: "5%" }} />
+          tempor incididunt ut labore et dolore sed do eiusmod tempor incididunt
+          ut labore et dolore t, <Colorbar sx={{ width: "15%" }} /> sed do
+          eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit
+          amet, consectetur adipiscing.{" "}
         </Typography>
         <ImageWrapper>
           <img

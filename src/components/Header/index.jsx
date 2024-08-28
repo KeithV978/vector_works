@@ -19,16 +19,20 @@ import {
 } from "./styles";
 import {
   Mail01Icon,
+  MenuCircleIcon,
   TelegramIcon,
   WhatsappBusinessIcon,
 } from "hugeicons-react";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import logo from "../../assets/images/logo/logo.svg";
+import { IconButton } from "@mui/material";
+import Drawer from "./Drawer";
 // import { useTheme } from "@mui/material";
 
 const Header = React.memo(() => {
   const [scrollHeight, setScrollHeight] = React.useState(window.scrollY);
+  const [menuOpen, setMenuOpen] = React.useState(false);
   const handleScroll = () => setScrollHeight(window.scrollY);
 
   React.useEffect(() => {
@@ -36,6 +40,9 @@ const Header = React.memo(() => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleMenuOpen = () => {
+    setMenuOpen(!menuOpen);
+  };
   // const theme = useTheme();
 
   return (
@@ -52,6 +59,17 @@ const Header = React.memo(() => {
           </Stack>
         </Link>
         <Nav>
+          <IconButton
+            onClick={handleMenuOpen}
+            sx={{
+              display: { sm: "none", xs: "block" },
+              float: "left",
+              transition: "ease all .3s",
+              transform: menuOpen ? "rotate(-45deg)" : "",
+            }}
+          >
+            <MenuCircleIcon color="#fcfcfc" />
+          </IconButton>
           <Ul>
             <a href={HERO}>
               <Li component="li" variant="body2">
@@ -115,6 +133,7 @@ const Header = React.memo(() => {
           </Ul>
         </Nav>
       </InnerWrapper>
+      <Drawer menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </Wrapper>
   );
 });

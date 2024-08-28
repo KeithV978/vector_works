@@ -38,9 +38,10 @@ const Card = ({
       sx={{
         display: "flex",
         flexDirection: "column",
-        alignItems: alignItems || "end",
+        alignItems: alignItems || "center",
+        justifyContent: "center",
         width: "fit-content",
-        maxWidth: "360px",
+        maxWidth: "300px",
         minWidth: "260px",
         borderTop: borderTop ? borderTop : "",
         borderBottom: borderBottom ? borderBottom : "",
@@ -67,7 +68,7 @@ export const Services = () => {
   return (
     <Wrapper id="services">
       <Grid container spacing={1}>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <Stack direction="column" alignItems="end" spacing={1}>
             <Heading
               borderBottom="2px solid #fff"
@@ -114,7 +115,7 @@ export const Services = () => {
             {/* Card 2 end */}
           </Stack>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
           <Stack direction="column" spacing={1}>
             {/* Card 3 */}
             <Card
