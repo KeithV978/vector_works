@@ -50,7 +50,15 @@ export const Portfolio = () => {
       </Wrapper>
       <PortfolioWrapper />
       <div style={{ margin: "3rem auto", width: "fit-content" }}>
-        <Button variant="outlined" sx={{ borderRadius: "20px" }}>
+        <Button
+          variant="outlined"
+          sx={{
+            borderRadius: "20px",
+            minWidth: "200px",
+            borderColor: "#fff",
+            color: "#fff",
+          }}
+        >
           View All
         </Button>
       </div>

@@ -11,7 +11,7 @@ import { ArrowRight01Icon } from "hugeicons-react";
 import Stack from "@mui/material/Stack";
 
 const Accordion = styled((props) => (
-  <MuiAccordion disableGutters elevation={0} square {...props} />
+  <MuiAccordion disableGutters elevation={2} square {...props} />
 ))(({ theme }) => ({
   maxWidth: "700px",
   border: `1px solid ${theme.palette.divider}`,
@@ -46,11 +46,11 @@ const AccordionSummary = styled((props) => (
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
-  borderTop: "1px solid rgba(0, 0, 0, .125)",
+  borderTop: "1px solid rgba(225, 225, 225, .125)",
 }));
 
 export const FAQs = () => {
-  const [expanded, setExpanded] = React.useState("panel1");
+  const [expanded, setExpanded] = React.useState("");
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
