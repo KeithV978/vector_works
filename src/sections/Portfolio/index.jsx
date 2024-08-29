@@ -10,7 +10,8 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { PortfolioWrapper } from "./PortfolioWrapper";
 import { Heading } from "../../components/Heading";
-import { Button } from "../../components/Button";
+import { Button } from "@mui/material";
+// import { Button } from "../../components/Button";
 // import { ArrowUpRight02Icon } from "hugeicons-react";
 
 export const Portfolio = () => {
@@ -49,7 +50,9 @@ export const Portfolio = () => {
       </Wrapper>
       <PortfolioWrapper />
       <div style={{ margin: "3rem auto", width: "fit-content" }}>
-        <Button>View All</Button>
+        <Button variant="outlined" sx={{ borderRadius: "20px" }}>
+          View All
+        </Button>
       </div>
     </section>
   );

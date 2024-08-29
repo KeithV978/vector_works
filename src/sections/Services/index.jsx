@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { Heading } from "../../components/Heading";
+// import { Heading } from "../../components/Heading";
 import { Button } from "../../components/Button";
 
 // icons
@@ -70,14 +70,24 @@ export const Services = () => {
       <Grid container spacing={1}>
         <Grid item xs={12} sm={6}>
           <Stack direction="column" alignItems="end" spacing={1}>
-            <Heading
-              borderBottom="2px solid #fff"
-              borderRight="2px solid #fff"
-              margin="0"
+            {/* <Heading 
+              // borderBottom="2px solid #fff"
+              // borderRight="2px solid #fff"
+              {/* margin="0" */}
+            {/* > */}
+            <Box
+              sx={{
+                background: `linear-gradient(85deg, #302f2f, #FFF)`,
+                webkitBackgroundClip: "text",
+                webkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                textFillColor: "transparent",
+                textTransform: "capitalize",
+              }}
             >
-              {/* <Building05Icon /> */}
-              what we can build for you.
-            </Heading>
+              <Typography variant="h4">what we can build for you.</Typography>
+            </Box>
+            {/* </Heading> */}
             {/* Card 1 */}
             <Card
               borderBottom="2px solid #fff"

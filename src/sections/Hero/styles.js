@@ -56,9 +56,12 @@ export const HeroContents = styled("div")(({ theme }) => ({
   },
 }));
 export const HeroImage = styled("div")(({ theme }) => ({
-  width: "230px",
-  display: "flex",
-  justifyContent: "right",
+  // display: "flex",
+  // justifyContent: "right",
+  [theme.breakpoints.up("sm")]: {
+    width: "230px",
+    // width: "90%",
+  },
 }));
 export const Image = styled("img")(({ theme }) => ({
   width: "100%",
@@ -88,40 +91,6 @@ export const TextGradient = styled("div")(({ theme }) => ({
   textFillColor: "transparent",
   fontFamily: "Righteous-Regular",
 }));
-
-// export const HeroButton = styled(Button)(({ theme }) => ({
-//   width: "180px",
-//   //   padding: "auto 3rem",
-//   //   display: "flex",
-//   // background: `linear-gradient(240deg, ${[
-//   //   theme.palette.primary.main,
-//   // ]} 0.001%, ${[theme.palette.secondary.main]})`,
-//   background: "#fff",
-//   color: "#1c1c1c",
-//   borderRadius: "20px",
-//   boxShadow: "8px 7px 17px 0px #1e1e1e69",
-//   transition: "all ease .3s",
-//   border: "1px solid #fff",
-//   fontWeight: 600,
-
-//   [theme.breakpoints.up("sm")]: {
-//     marginTop: "1rem",
-//     width: "200px",
-//   },
-//   display: "flex",
-//   flexDirection: "column",
-//   overflowY: "hidden",
-//   // padding: "1rem 0 0",
-//   position: "relative",
-//   "& .before": {
-//     position: "absolute",
-//     top: 0,
-//     transition: "all ease .3s",
-//   },
-//   "&:hover .before": {
-//     marginTop: "-2rem",
-//   },
-// }));
 
 export const BottomArrow = styled(motion.div)(({ theme }) => ({
   position: "absolute",

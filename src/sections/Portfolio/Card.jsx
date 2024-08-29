@@ -43,9 +43,11 @@ export const ProjectCard = ({ data }) => {
         >
           {data.text}
         </Typography>
-        <Button href={data.link}>
-          See Live <EyeIcon style={{ width: "18px", marginLeft: ".5rem" }} />
-        </Button>
+        <a href={data.link}>
+          <Button>
+            See Live <EyeIcon style={{ width: "18px", marginLeft: ".5rem" }} />
+          </Button>
+        </a>
       </CardText>
     </CardWrapper>
   );

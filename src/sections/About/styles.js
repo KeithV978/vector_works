@@ -45,5 +45,8 @@ export const Colorbar = styled("span")(({ theme }) => ({
   // ]}, ${[theme.palette.primary.main]})`,
   margin: "auto .5rem",
   borderRadius: "20px",
-  backgroundColor: "white",
+  // backgroundColor: `${[theme.palette.secondary.light]}`,
+  background: `linear-gradient(50deg, ${[theme.palette.primary.main]}, ${[
+    theme.palette.secondary.main,
+  ]}) 10%`,
 }));

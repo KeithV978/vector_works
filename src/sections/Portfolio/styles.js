@@ -56,7 +56,6 @@ export const GradNumber = styled("div")(({ theme }) => ({
   webkitTextFillColor: "transparent",
   backgroundClip: "text",
   textFillColor: "transparent",
-  fontFamily: "Righteous-Regular",
 }));
 
 export const CardWrapper = styled(Card)(({ theme }) => ({

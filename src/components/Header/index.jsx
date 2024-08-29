@@ -133,7 +133,7 @@ const Header = React.memo(() => {
           </Ul>
         </Nav>
       </InnerWrapper>
-      <Drawer menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Drawer menuOpen={menuOpen} setMenuOpen={handleMenuOpen} />
     </Wrapper>
   );
 });
