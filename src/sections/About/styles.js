@@ -36,9 +36,10 @@ export const ImageWrapper = styled("div")(({ theme }) => ({
     ]}, #1D0835)`,
   },
 }));
+
 export const Colorbar = styled("span")(({ theme }) => ({
   display: "inline-block",
-  width: "15%",
+  width: "250px",
   height: "15px",
   // background: `linear-gradient(348deg, ${[theme.palette.secondary.main]}, ${[
   //   theme.palette.tertiary.main,
@@ -49,4 +50,17 @@ export const Colorbar = styled("span")(({ theme }) => ({
   background: `linear-gradient(50deg, ${[theme.palette.primary.main]}, ${[
     theme.palette.secondary.main,
   ]}) 10%`,
+}));
+
+export const TitleText = styled("div")(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  width: "max-content",
+  background: `linear-gradient(50deg, ${[theme.palette.primary.main]}, ${[
+    theme.palette.secondary.main,
+  ]}) 10%`,
+  webkitBackgroundClip: "text",
+  webkitTextFillColor: "transparent",
+  backgroundClip: "text",
+  textFillColor: "transparent",
 }));

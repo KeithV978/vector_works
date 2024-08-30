@@ -35,9 +35,9 @@ export const Heading = ({
         borderRadius: radius ? radius : "20px",
         margin: margin ? margin : "1rem initial",
 
-        background: `linear-gradient(85deg, #1c1c1c 1%, ${[
+        background: `linear-gradient(85deg, ${[
           theme.palette.primary.main,
-        ]}, ${[theme.palette.secondary.main]}, #1c1c1c)`,
+        ]} 10%, ${[theme.palette.secondary.main]})`,
         webkitBackgroundClip: "text",
         webkitTextFillColor: "transparent",
         backgroundClip: "text",

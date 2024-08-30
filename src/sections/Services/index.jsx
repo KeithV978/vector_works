@@ -41,7 +41,7 @@ const Card = ({
         alignItems: alignItems || "center",
         justifyContent: "center",
         width: "fit-content",
-        maxWidth: "300px",
+        maxWidth: "390px",
         minWidth: "260px",
         borderTop: borderTop ? borderTop : "",
         borderBottom: borderBottom ? borderBottom : "",
@@ -50,7 +50,7 @@ const Card = ({
         padding: "1.5rem",
         borderRadius: "20px",
         // margin: margin ? margin : "1rem initial",
-        backgroundColor: "#1c1c1cdb",
+        backgroundColor: "#1c1c1ce6",
       }}
     >
       {children}
@@ -77,12 +77,13 @@ export const Services = () => {
             {/* > */}
             <Box
               sx={{
-                background: `linear-gradient(85deg, #302f2f, #FFF)`,
-                webkitBackgroundClip: "text",
-                webkitTextFillColor: "transparent",
-                backgroundClip: "text",
-                textFillColor: "transparent",
-                textTransform: "capitalize",
+                // background: `linear-gradient(85deg, #302f2f, #FFF)`,
+                // webkitBackgroundClip: "text",
+                // webkitTextFillColor: "transparent",
+                // backgroundClip: "text",
+                // textFillColor: "transparent",
+                textTransform: "uppercase",
+                // color: "#fff",
               }}
             >
               <Typography variant="h4">what we can build for you.</Typography>
@@ -95,8 +96,8 @@ export const Services = () => {
               alignItems="end"
             >
               <Image src={dapps} alt="dapps" />
-              <CardHeader variant="h6">DAPP Development</CardHeader>
-              <CardBody variant="body1" textAlign="right">
+              <CardHeader variant="h4">DAPP Development</CardHeader>
+              <CardBody variant="h6" textAlign="right">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardBody>
@@ -113,8 +114,8 @@ export const Services = () => {
               alignItems="end"
             >
               <Image src={sc} alt="smart contracts" />
-              <CardHeader variant="h6">Smart Contracts</CardHeader>
-              <CardBody variant="body1" textAlign="right">
+              <CardHeader variant="h4">Smart Contracts</CardHeader>
+              <CardBody variant="h6" textAlign="right">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardBody>
@@ -134,8 +135,8 @@ export const Services = () => {
               alignItems="start"
             >
               <Image src={graphics} alt="smart contracts" />
-              <CardHeader variant="h6">Graphics Design</CardHeader>
-              <CardBody variant="body1" textAlign="left">
+              <CardHeader variant="h4">Graphics Design</CardHeader>
+              <CardBody variant="h6" textAlign="left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardBody>
@@ -152,8 +153,8 @@ export const Services = () => {
               alignItems="start"
             >
               <Image src={web} alt="smart contracts" />
-              <CardHeader variant="h6">Web Development</CardHeader>
-              <CardBody variant="body1" textAlign="left">
+              <CardHeader variant="h4">Web Development</CardHeader>
+              <CardBody variant="h6" textAlign="left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </CardBody>

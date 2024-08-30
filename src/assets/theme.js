@@ -25,11 +25,11 @@ let theme = createTheme({
       color: "#fff",
     },
     h3: {
-      fontFamily: '"Balthazar", "Open-Sans"',
+      fontFamily: '"Righteous", "Open-Sans"',
       color: "#fff",
     },
     h4: {
-      fontFamily: '"Righteous", "Open-Sans"',
+      fontFamily: '"Balthazar", "Open-Sans"',
       color: "#fff",
       fontWeight: 700,
     },

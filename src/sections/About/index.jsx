@@ -1,9 +1,10 @@
 import React from "react";
-import { Colorbar, ImageWrapper, Wrapper } from "./styles";
+import { Colorbar, ImageWrapper, TitleText, Wrapper } from "./styles";
 // import { Heading } from "../../components/Heading";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import phonelap from "../../assets/images/about/lapphone2.png";
+import { PaintBrush04Icon } from "hugeicons-react";
 
 const About = () => {
   return (
@@ -15,25 +16,20 @@ const About = () => {
           justifyContent: "center",
         }}
       >
-        <Typography variant="h6" textAlign="left">
-          <Typography
-            variant="h4"
-            margin="3rem 0 0"
-            textTransform="uppercase"
-            // letterSpacing={5}
-            // color="secondary.light"
-          >
-            We build your visions
-          </Typography>
-          <Colorbar sx={{ marginLeft: 0, width: "20%" }} /> Lorem ipsum dolor
-          sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut
+        <Typography variant="h6" textAlign="justify">
+          <TitleText>
+            <PaintBrush04Icon color="inherit" width="50px" height="50px" />
+            <Typography variant="h3"> We build your visions</Typography>{" "}
+          </TitleText>
+          <Colorbar sx={{ marginLeft: 0 }} /> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore sed do eiusmod
-          tempor incididunt ut labore et dolore t,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore sed do eiusmod tempor
+          incididunt ut labore et dolore t,
           {/* <Colorbar sx={{ width: "15%" }} />  */}
           sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor
           sit amet, consectetur adipiscing.{" "}

@@ -9,14 +9,16 @@ const Home = React.lazy(() => import("../layout/Home"));
 
 export const Layout = () => {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path={HOME} element={<Home />} />
-        {/* <Route path="/about" element={<About />} />
+    <div className="layout">
+      <Router>
+        <Header />
+        <Routes>
+          <Route path={HOME} element={<Home />} />
+          {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} /> */}
-      </Routes>
-    </Router>
+        </Routes>
+      </Router>
+    </div>
   );
 };
 

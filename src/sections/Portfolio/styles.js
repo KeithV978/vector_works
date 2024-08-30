@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 
 export const Wrapper = styled(Box)(({ theme }) => ({
   width: "100%",
-  minHeight: "70vh",
+  minHeight: "50vh",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -63,6 +63,7 @@ export const CardWrapper = styled(Card)(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   maxWidth: "100%",
+  // maxHeight: "60vh",
   backgroundColor: "#1c1c1c",
   padding: "2rem 1rem",
   transition: "ease all .3s",
@@ -77,7 +78,7 @@ export const CardWrapper = styled(Card)(({ theme }) => ({
 }));
 export const CardImage = styled("div")(({ theme }) => ({
   width: "90%",
-  boxShadow: "4px 4px 10px #101010",
+  // boxShadow: "4px 4px 10px #101010",
   borderTopLeftRadius: "20px",
   borderTopRightRadius: "20px",
   padding: "1rem",

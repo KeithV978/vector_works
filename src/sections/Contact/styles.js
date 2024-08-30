@@ -2,7 +2,7 @@ import { styled } from "@mui/material";
 import Box from "@mui/material/Box";
 
 export const Wrapper = styled("section")(({ theme }) => ({
-  minHeight: "100vh",
+  // minHeight: "100vh",
   width: "100%",
   display: "flex",
   flexDirection: "column",
@@ -17,7 +17,7 @@ export const Wrapper = styled("section")(({ theme }) => ({
     justifyContent: "end",
 
     "&::before": {
-      content: '""',
+      // content: '""',
       position: "absolute",
       zIndex: -1,
       rotate: "115deg",

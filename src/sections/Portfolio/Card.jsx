@@ -26,8 +26,9 @@ export const ProjectCard = ({ data }) => {
       <Typography
         variant="body1"
         fontWeight={600}
-        margin="1rem auto .5rem"
         textAlign="center"
+        margin="1rem auto .5rem"
+        // sx={{}}
       >
         {data.title}
       </Typography>
@@ -35,11 +36,17 @@ export const ProjectCard = ({ data }) => {
         <Typography
           variant="body1"
           textAlign="center"
-          sx={
-            {
-              // reduce texts to only 3 lines
-            }
-          }
+          sx={{
+            // reduce texts to only 3 lines
+            display: "-webkit-box",
+            lineClamp: 3,
+            WebkitLineClamp: 3,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            // maxHeight: "3.6em",
+            // lineHeight: "1.8em",
+          }}
         >
           {data.text}
         </Typography>

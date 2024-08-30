@@ -1,19 +1,19 @@
 import { styled } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
+// import Container from "@mui/material/Container";
 
 // import Button from "@mui/material/Button";
 
-export const Wrapper = styled("section")(({ theme }) => ({
+export const Wrapper = styled("header")(({ theme }) => ({
   width: "100%",
   padding: "1rem 0",
-  zIndex: 1000,
+  zIndex: 999,
   backdropFilter: "blur(10px)",
   background: "inherit",
   transition: "all ease .3s",
   [theme.breakpoints.up("sm")]: {},
 }));
-export const InnerWrapper = styled(Container)(({ theme }) => ({
+export const InnerWrapper = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",

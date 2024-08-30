@@ -1,4 +1,5 @@
 import { styled } from "@mui/material";
+
 export const Wrapper = styled("section")(({ theme }) => ({
   minHeight: "40vh",
   position: "relative",

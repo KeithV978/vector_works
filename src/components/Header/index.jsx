@@ -25,7 +25,7 @@ import {
 } from "hugeicons-react";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import logo from "../../assets/images/logo/logo.svg";
+import logo from "../../assets/images/logo/logo.png";
 import { IconButton } from "@mui/material";
 import Drawer from "./Drawer";
 // import { useTheme } from "@mui/material";
@@ -47,7 +47,7 @@ const Header = React.memo(() => {
 
   return (
     <Wrapper
-      sx={{ position: scrollHeight > 180 ? "fixed" : "absolute", top: 0 }}
+      sx={{ position: scrollHeight > 180 ? "sticky" : "absolute", top: 0 }}
     >
       <InnerWrapper>
         <Link to={HOME}>
