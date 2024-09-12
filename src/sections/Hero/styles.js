@@ -2,72 +2,84 @@ import { styled } from "@mui/material";
 // import Stack from "@mui/material/Stack";
 // import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
+import heroImage from "../../assets/images/hero/hero hand.png";
 
 export const Wrapper = styled("section")(({ theme }) => ({
   width: "100%",
-  minHeight: "100vh",
+  // minHeight: "100vh",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   position: "relative",
+  [theme.breakpoints.up("sm")]: {
+    // width: "90%",
+    minHeight: "700px",
+    // borderRight: "2px solid #ccc",
+  },
   // background: `linear-gradient(180deg, transparent 50%, #1c1c1c)`,
-  "&::before": {
-    content: '""',
-    position: "absolute",
-    // top: "50%",
-    right: "59%",
-    // transform: "translate(-50%, -50%)",
-    height: "80%",
-    width: "15%",
-    // backgroundColor: `${[theme.palette.secondary.main]}`,
-    zIndex: -1,
-    filter: "blur(55px)",
-    rotate: "315deg",
-    border: "5px solid #fff",
-    background: `linear-gradient(248deg, ${[
-      theme.palette.secondary.main,
-    ]}, #1D0835, #1D0835)`,
-  },
-  "&::after": {
-    content: '""',
-    position: "absolute",
-    // top: "50%",
-    left: "59%",
-    // transform: "translate(-50%, -50%)",
-    height: "80%",
-    width: "15%",
-    filter: "blur(55px)",
-    zIndex: -1,
-    rotate: "45deg",
-    border: "5px solid #fff",
-    // backgroundColor: `${[theme.palette.secondary.main]}`,
-    background: `linear-gradient(248deg, ${[
-      theme.palette.secondary.main,
-    ]}, #1D0835, #1D0835)`,
-  },
+  // "&::before": {
+  //   // content: '""',
+  //   position: "absolute",
+  //   // top: "50%",
+  //   right: "59%",
+  //   // transform: "translate(-50%, -50%)",
+  //   height: "80%",
+  //   width: "15%",
+  //   // backgroundColor: `${[theme.palette.secondary.main]}`,
+  //   zIndex: -1,
+  //   filter: "blur(55px)",
+  //   rotate: "315deg",
+  //   border: "5px solid #fff",
+  //   background: `linear-gradient(248deg, ${[
+  //     theme.palette.secondary.main,
+  //   ]}, #1D0835, #1D0835)`,
+  // },
+  // "&::after": {
+  //   // content: '""',
+  //   position: "absolute",
+  //   // top: "50%",
+  //   left: "59%",
+  //   // transform: "translate(-50%, -50%)",
+  //   height: "80%",
+  //   width: "15%",
+  //   filter: "blur(55px)",
+  //   zIndex: -1,
+  //   rotate: "45deg",
+  //   border: "5px solid #fff",
+  //   // backgroundColor: `${[theme.palette.secondary.main]}`,
+  //   background: `linear-gradient(248deg, ${[
+  //     theme.palette.secondary.main,
+  //   ]}, #1D0835, #1D0835)`,
+  // },
 }));
 export const HeroContents = styled("div")(({ theme }) => ({
-  width: "80%",
+  width: "100%",
   display: "flex",
-  flexDirection: "row",
+  flexDirection: "column",
   justifyContent: "center",
+  alignItems: "center",
   [theme.breakpoints.up("sm")]: {
-    width: "90%",
+    flexDirection: "row",
+    // width: "90%",
   },
 }));
 export const HeroImage = styled("div")(({ theme }) => ({
   // display: "flex",
   // justifyContent: "right",
+  backgroundImage: `url('${heroImage}')`,
+  backgroundPosition: "right",
+  backgroundSize: "contain",
+  width: "100%",
+  height: "70vh",
   [theme.breakpoints.up("sm")]: {
-    width: "230px",
-    // width: "90%",
+    width: "50%",
   },
 }));
 export const Image = styled("img")(({ theme }) => ({
   width: "100%",
   display: "block",
   [theme.breakpoints.up("sm")]: {
-    width: "100%",
+    // width: "100%",
   },
 }));
 
@@ -82,7 +94,7 @@ export const HeroText = styled("div")(({ theme }) => ({
 }));
 export const TextGradient = styled("div")(({ theme }) => ({
   width: "min-content",
-  background: `linear-gradient(250deg, ${[theme.palette.primary.main]}, ${[
+  background: `linear-gradient(250deg, ${[theme.palette.primary.main]} 1%, ${[
     theme.palette.tertiary.main,
   ]} , ${[theme.palette.secondary.main]}) 10%`,
   webkitBackgroundClip: "text",

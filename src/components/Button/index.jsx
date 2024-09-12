@@ -9,7 +9,7 @@ const Wrapper = styled(Btn)(({ theme }) => ({
   boxShadow: "8px 7px 17px 0px #1e1e1e69",
   transition: "all ease .3s",
   color: "#1c1c1c",
-  backgroundColor: `#fff`,
+  backgroundColor: `${[theme.palette.primary.main]}`,
   display: "flex",
   flexDirection: "column",
   overflowY: "hidden",

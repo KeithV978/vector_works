@@ -8,6 +8,9 @@ export const Wrapper = styled("section")(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   flexDirection: "column",
+  [theme.breakpoints.up("sm")]: {
+    minHeight: "700px",
+  },
 }));
 export const ImageWrapper = styled("div")(({ theme }) => ({
   minWidth: "100%",
@@ -24,12 +27,13 @@ export const ImageWrapper = styled("div")(({ theme }) => ({
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    height: "30%",
-    width: "65%",
-    filter: "blur(55px)",
+    height: "50%",
+    width: "50%",
+    borderRadius: "50%",
+    filter: "blur(20px)",
     zIndex: -1,
     // rotate: "45deg",
-    border: "5px solid #fff",
+    border: "3px solid #fff",
     // backgroundColor: `${[theme.palette.secondary.main]}`,
     background: `linear-gradient(48deg, ${[theme.palette.secondary.main]}, ${[
       theme.palette.tertiary.main,
@@ -47,20 +51,20 @@ export const Colorbar = styled("span")(({ theme }) => ({
   margin: "auto .5rem",
   borderRadius: "20px",
   // backgroundColor: `${[theme.palette.secondary.light]}`,
-  background: `linear-gradient(50deg, ${[theme.palette.primary.main]}, ${[
-    theme.palette.secondary.main,
-  ]}) 10%`,
+  background: `linear-gradient(75deg, ${[theme.palette.secondary.main]} 2%, ${[
+    theme.palette.tertiary.main,
+  ]}) 1%`,
 }));
 
-export const TitleText = styled("div")(({ theme }) => ({
-  display: "flex",
-  alignItems: "center",
-  width: "max-content",
-  background: `linear-gradient(50deg, ${[theme.palette.primary.main]}, ${[
-    theme.palette.secondary.main,
-  ]}) 10%`,
-  webkitBackgroundClip: "text",
-  webkitTextFillColor: "transparent",
-  backgroundClip: "text",
-  textFillColor: "transparent",
-}));
+// export const TitleText = styled("div")(({ theme }) => ({
+//   display: "flex",
+//   alignItems: "center",
+//   width: "max-content",
+//   background: `linear-gradient(50deg, ${[theme.palette.primary.main]}, ${[
+//     theme.palette.secondary.main,
+//   ]}) 10%`,
+//   webkitBackgroundClip: "text",
+//   webkitTextFillColor: "transparent",
+//   backgroundClip: "text",
+//   textFillColor: "transparent",
+// }));

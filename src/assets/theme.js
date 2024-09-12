@@ -15,13 +15,9 @@ let theme = createTheme({
     background: "#1c1c1c",
   },
   typography: {
-    fontFamily: "Comme, Balthazar, Righteous,  Arial, sans-serif",
-    h1: {
-      fontFamily: '"Righteous", "Open-Sans"',
-      color: "#fff",
-    },
+    fontFamily: "Ubuntu-Regular  Arial, sans-serif",
     h2: {
-      fontFamily: '"Righteous", "Open-Sans"',
+      fontFamily: '"Ubuntu-Bold", "Open-Sans"',
       color: "#fff",
     },
     h3: {
@@ -34,16 +30,16 @@ let theme = createTheme({
       fontWeight: 700,
     },
     h6: {
-      fontFamily: "Comme",
+      // fontFamily: "Comme",
       color: "#fff",
     },
     body1: {
-      fontFamily: '"Comme"',
+      // fontFamily: '"Comme"',
       color: "#fff",
     },
     body2: {
+      // fontFamily: '"Comme"',
       color: "#fff",
-      fontFamily: '"Comme"',
     },
   },
   breakpoints: {

@@ -1,6 +1,5 @@
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import AIRobot from "../../assets/images/hero/ai-robot.png";
 import {
   BottomArrow,
   Circles,
@@ -8,8 +7,7 @@ import {
   HeroContents,
   HeroImage,
   HeroText,
-  Image,
-  TextGradient,
+  // TextGradient,
   Wrapper,
 } from "./styles";
 import {
@@ -22,15 +20,12 @@ export const Hero = () => {
   return (
     <Wrapper id="hero">
       <HeroContents>
-        <HeroImage>
-          <Image src={AIRobot} alt="ai-robot" />
-        </HeroImage>
         <HeroText>
-          <TextGradient>
+          {/* <TextGradient>
             <Typography variant="h6" fontWeight={600}>
               VectorWorks
             </Typography>
-          </TextGradient>
+          </TextGradient> */}
           <Typography variant="h2" fontWeight={600} marginBottom="1rem">
             BRINGING YOUR WEB3 DREAMS TO LIFE.
           </Typography>
@@ -39,11 +34,9 @@ export const Hero = () => {
             state-of-the-art digital solutions.
           </Typography>
 
-          <Button>
-            Learn More
-            {/* <ArrowRight04Icon /> */}
-          </Button>
+          <Button>Get Started</Button>
         </HeroText>
+        <HeroImage />
       </HeroContents>
       <BottomArrow
         // initial={{ marginTop: "-10px" }}

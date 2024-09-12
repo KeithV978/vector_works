@@ -1,5 +1,5 @@
 import { styled } from "@mui/material";
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 // import Container from "@mui/material/Container";
 
 // import Button from "@mui/material/Button";
@@ -31,43 +31,18 @@ export const Logo = styled("img")(({ theme }) => ({
   // [theme.breakpoints.up("sm")]: {},
 }));
 export const Nav = styled("nav")(({ theme }) => ({
-  width: "0%",
-  // position: "relative",
   [theme.breakpoints.up("sm")]: {
-    width: "80%",
+    // width: "80%",
   },
   [theme.breakpoints.up("md")]: {
-    width: "60%",
+    // width: "60%",
   },
 }));
+
 export const Ul = styled("ul")(({ theme }) => ({
-  display: "none",
-  [theme.breakpoints.up("sm")]: {
-    display: "flex",
-    margin: 0,
-    listStyle: "none",
-    width: "100%",
-    height: "100%",
-    justifyContent: "space-between",
-    alignItems: "center",
-    position: "relative",
-    flexDirection: "row",
-  },
-}));
-export const Li = styled(Typography)(({ theme }) => ({
+  display: "flex",
   listStyle: "none",
-  transition: "all ease .3s",
-  textTransform: "uppercase",
-  // fontWeight: 600,
-  letterSpacing: ".1rem",
-  "&:hover": {
-    color: `${[theme.palette.tertiary.main]}`,
-  },
-  "&:active": {
-    color: `${[theme.palette.tertiary.main]}`,
-  },
-  [theme.breakpoints.up("sm")]: {
-    position: "relative",
-    flexDirection: "row",
-  },
+  gap: 5,
+  alignItems: "center",
+  justifyContent: "center",
 }));

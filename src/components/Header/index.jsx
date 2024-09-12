@@ -1,38 +1,23 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
+import { HOME } from "../../utils/links";
+import { InnerWrapper, Logo, LogoWrapper, Nav, Ul, Wrapper } from "./styles";
 import {
-  ABOUT,
-  CONTACT,
-  HERO,
-  HOME,
-  PORTFOLIO,
-  SERVICES,
-} from "../../utils/links";
-import {
-  InnerWrapper,
-  Li,
-  Logo,
-  LogoWrapper,
-  Nav,
-  Ul,
-  Wrapper,
-} from "./styles";
-import {
-  Mail01Icon,
-  MenuCircleIcon,
+  // Mail01Icon,
   TelegramIcon,
+  TwitterIcon,
   WhatsappBusinessIcon,
 } from "hugeicons-react";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import logo from "../../assets/images/logo/logo.png";
-import { IconButton } from "@mui/material";
-import Drawer from "./Drawer";
-// import { useTheme } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
+// import Drawer from "./Drawer";
+// import { useTheme } from "@mui/material/";
 
 const Header = React.memo(() => {
   const [scrollHeight, setScrollHeight] = React.useState(window.scrollY);
-  const [menuOpen, setMenuOpen] = React.useState(false);
+  // const [menuOpen, setMenuOpen] = React.useState(false);
   const handleScroll = () => setScrollHeight(window.scrollY);
 
   React.useEffect(() => {
@@ -40,9 +25,9 @@ const Header = React.memo(() => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleMenuOpen = () => {
-    setMenuOpen(!menuOpen);
-  };
+  // const handleMenuOpen = () => {
+  //   setMenuOpen(!menuOpen);
+  // };
   // const theme = useTheme();
 
   return (
@@ -59,7 +44,70 @@ const Header = React.memo(() => {
           </Stack>
         </Link>
         <Nav>
-          <IconButton
+          <Ul>
+            <li>
+              <IconButton sx={{ display: "flex", flexDirection: "column" }}>
+                <TelegramIcon
+                  style={{ color: "#ccc", width: "1rem", height: "1rem" }}
+                />
+                {/* <span
+                  style={{
+                    width: "20px",
+                    // height: "1px",
+                    border: "1px solid #fff",
+                    borderColor: `${[theme.palette.primary.main]}`,
+                    marginTop: ".3rem",
+                  }}
+                ></span> */}
+              </IconButton>
+            </li>
+            <li>
+              <IconButton sx={{ display: "flex", flexDirection: "column" }}>
+                <TwitterIcon
+                  style={{ color: "#ccc", width: "1rem", height: "1rem" }}
+                />
+                {/* <span
+                  style={{
+                    width: "20px",
+                    // height: "1px",
+                    border: "1px solid #fff",
+                    borderColor: `${[theme.palette.primary.main]}`,
+                    marginTop: ".3rem",
+                  }}
+                ></span> */}
+              </IconButton>
+            </li>
+            <li>
+              <IconButton sx={{ display: "flex", flexDirection: "column" }}>
+                <WhatsappBusinessIcon
+                  style={{ color: "#ccc", width: "1rem", height: "1rem" }}
+                />
+                {/* <span
+                  style={{
+                    width: "20px",
+                    // height: "1px",
+                    border: "1px solid #fff",
+                    borderColor: `${[theme.palette.primary.main]}`,
+                    marginTop: ".3rem",
+                  }}
+                ></span> */}
+              </IconButton>
+            </li>
+            <li>
+              <Button
+                variant="outlined"
+                sx={{
+                  color: "#ccc",
+                  borderColor: "#ccc",
+                  borderRadius: "25px",
+                  fontWeight: 500,
+                }}
+              >
+                Contact Us
+              </Button>
+            </li>
+          </Ul>
+          {/* <IconButton
             onClick={handleMenuOpen}
             sx={{
               display: { sm: "none", xs: "block" },
@@ -69,71 +117,10 @@ const Header = React.memo(() => {
             }}
           >
             <MenuCircleIcon color="#fcfcfc" />
-          </IconButton>
-          <Ul>
-            <a href={HERO}>
-              <Li component="li" variant="body2">
-                WELCOME
-              </Li>
-            </a>
-            <a href={ABOUT}>
-              <Li component="li" variant="body2">
-                ABOUT US
-              </Li>
-            </a>
-            <a href={SERVICES}>
-              <Li component="li" variant="body2">
-                SERVICES
-              </Li>
-            </a>
-            <a href={PORTFOLIO}>
-              <Li component="li" variant="body2">
-                PORTFOLIO
-              </Li>
-            </a>
-            <a href={CONTACT}>
-              <Li component="li" variant="body2">
-                CONTACT
-              </Li>
-            </a>
-            {/* <a> */}
-            <Stack direction="row" spacing={2}>
-              <a href="tel:+1234567890">
-                <Li component="li" variant="body2">
-                  <Mail01Icon
-                    style={{
-                      width: "20px",
-                      // color: "#1c1c1c",
-                    }}
-                  />
-                </Li>
-              </a>
-              <a href="https://t.me/">
-                <Li component="li" variant="body2">
-                  <TelegramIcon
-                    style={{
-                      width: "20px",
-                      // color: "#1c1c1c",
-                    }}
-                  />
-                </Li>
-              </a>
-              <a href="https://wa.me/+234567890">
-                <Li component="li" variant="body2">
-                  <WhatsappBusinessIcon
-                    style={{
-                      width: "20px",
-                      // color: "#1c1c1c",
-                    }}
-                  />
-                </Li>
-              </a>
-            </Stack>
-            {/* </a> */}
-          </Ul>
+          </IconButton> */}
         </Nav>
       </InnerWrapper>
-      <Drawer menuOpen={menuOpen} setMenuOpen={handleMenuOpen} />
+      {/* <Drawer menuOpen={menuOpen} setMenuOpen={handleMenuOpen} /> */}
     </Wrapper>
   );
 });
