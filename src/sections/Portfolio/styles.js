@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 
 export const Wrapper = styled(Box)(({ theme }) => ({
   width: "100%",
-  minHeight: "50vh",
+  minHeight: "600px",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -30,7 +30,7 @@ export const NumberCase = styled(Box)(({ theme }) => ({
   textAlign: "center",
   paddingLeft: ".5rem",
   [theme.breakpoints.up("sm")]: {
-    borderLeft: "1px solid #fff",
+    // borderLeft: "3px solid #fff",
   },
 }));
 export const Number = styled(Typography)(({ theme }) => ({

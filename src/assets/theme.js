@@ -21,7 +21,7 @@ let theme = createTheme({
       color: "#fff",
     },
     h3: {
-      fontFamily: '"Righteous", "Open-Sans"',
+      fontFamily: '"Ubuntu-Bold", "Open-Sans"',
       color: "#fff",
     },
     h4: {

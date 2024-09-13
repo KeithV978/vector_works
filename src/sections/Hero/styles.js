@@ -2,7 +2,7 @@ import { styled } from "@mui/material";
 // import Stack from "@mui/material/Stack";
 // import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
-import heroImage from "../../assets/images/hero/hero hand.png";
+import heroImage from "../../assets/images/hero/hand1.png";
 
 export const Wrapper = styled("section")(({ theme }) => ({
   width: "100%",
@@ -11,55 +11,55 @@ export const Wrapper = styled("section")(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   position: "relative",
+  minHeight: "700px",
   [theme.breakpoints.up("sm")]: {
     // width: "90%",
-    minHeight: "700px",
     // borderRight: "2px solid #ccc",
   },
   // background: `linear-gradient(180deg, transparent 50%, #1c1c1c)`,
-  // "&::before": {
-  //   // content: '""',
-  //   position: "absolute",
-  //   // top: "50%",
-  //   right: "59%",
-  //   // transform: "translate(-50%, -50%)",
-  //   height: "80%",
-  //   width: "15%",
-  //   // backgroundColor: `${[theme.palette.secondary.main]}`,
-  //   zIndex: -1,
-  //   filter: "blur(55px)",
-  //   rotate: "315deg",
-  //   border: "5px solid #fff",
-  //   background: `linear-gradient(248deg, ${[
-  //     theme.palette.secondary.main,
-  //   ]}, #1D0835, #1D0835)`,
-  // },
-  // "&::after": {
-  //   // content: '""',
-  //   position: "absolute",
-  //   // top: "50%",
-  //   left: "59%",
-  //   // transform: "translate(-50%, -50%)",
-  //   height: "80%",
-  //   width: "15%",
-  //   filter: "blur(55px)",
-  //   zIndex: -1,
-  //   rotate: "45deg",
-  //   border: "5px solid #fff",
-  //   // backgroundColor: `${[theme.palette.secondary.main]}`,
-  //   background: `linear-gradient(248deg, ${[
-  //     theme.palette.secondary.main,
-  //   ]}, #1D0835, #1D0835)`,
-  // },
+  "&::before": {
+    // content: '""',
+    position: "absolute",
+    // top: "50%",
+    right: "55%",
+    // transform: "translate(-50%, -50%)",
+    height: "700px",
+    width: "25%",
+    // backgroundColor: `${[theme.palette.secondary.main]}`,
+    zIndex: -10,
+    filter: "blur(55px)",
+    rotate: "-90deg",
+    border: "5px solid #fff",
+    background: `linear-gradient(248deg, ${[
+      theme.palette.secondary.main,
+    ]}, #1D0835, #1D0835)`,
+  },
+  "&::after": {
+    // content: '""',
+    position: "absolute",
+    // top: "50%",
+    left: "55%",
+    // transform: "translate(-50%, -50%)",
+    height: "700px",
+    width: "25%",
+    filter: "blur(55px)",
+    zIndex: -10,
+    rotate: "-45deg",
+    border: "5px solid #fff",
+    // backgroundColor: `${[theme.palette.secondary.main]}`,
+    background: `linear-gradient(248deg, ${[
+      theme.palette.secondary.main,
+    ]}, #1D0835, #1D0835)`,
+  },
 }));
 export const HeroContents = styled("div")(({ theme }) => ({
   width: "100%",
-  display: "flex",
+  // display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
   [theme.breakpoints.up("sm")]: {
-    flexDirection: "row",
+    // flexDirection: "row",
     // width: "90%",
   },
 }));
@@ -67,12 +67,11 @@ export const HeroImage = styled("div")(({ theme }) => ({
   // display: "flex",
   // justifyContent: "right",
   backgroundImage: `url('${heroImage}')`,
-  backgroundPosition: "right",
+  backgroundPosition: "center",
   backgroundSize: "contain",
   width: "100%",
-  height: "70vh",
   [theme.breakpoints.up("sm")]: {
-    width: "50%",
+    height: "400px",
   },
 }));
 export const Image = styled("img")(({ theme }) => ({
@@ -84,12 +83,14 @@ export const Image = styled("img")(({ theme }) => ({
 }));
 
 export const HeroText = styled("div")(({ theme }) => ({
-  width: "100%",
+  width: "60%",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   [theme.breakpoints.up("sm")]: {
-    width: "48%",
+    margin: "0 auto",
+    // width: "48%",
+    // paddingLeft: "20rem",
   },
 }));
 export const TextGradient = styled("div")(({ theme }) => ({
@@ -125,16 +126,15 @@ export const Circles = styled("ul")(({ theme }) => ({
     height: "20px",
     background: "rgba(255, 255, 255, 0.2)",
     bottom: "-150px",
-    animation: "animate 25s linear infinite",
+    animation: "animate 35s linear infinite",
   },
 
   "& li:nth-child(1)": {
     left: "25%",
-    width: "80px",
-    backgroundColor: `${[theme.palette.tertiary.main]}`,
-
-    height: "80px",
+    width: "50px",
+    height: "50px",
     animationDelay: "0s",
+    // backgroundColor: `${[theme.palette.tertiary.main]}`,
   },
   "& li:nth-child(2)": {
     left: "10%",
@@ -142,7 +142,7 @@ export const Circles = styled("ul")(({ theme }) => ({
     height: "20px",
     animationDelay: "0s",
     animationDuration: "12s",
-    backgroundColor: `${[theme.palette.primary.main]}`,
+    backgroundColor: `#46d6ec`,
   },
   "& li:nth-child(3)": {
     left: "70%",
@@ -152,9 +152,10 @@ export const Circles = styled("ul")(({ theme }) => ({
   },
   "& li:nth-child(4)": {
     left: "40%",
-    width: "60px",
+    // backgroundColor: `#46d6ec`,
+    width: "40px",
+    height: "40px",
     backgroundColor: `${[theme.palette.secondary.main]}`,
-    height: "60px",
     animationDelay: "0s",
     animationDuration: "18s",
   },
@@ -163,19 +164,21 @@ export const Circles = styled("ul")(({ theme }) => ({
     width: "20px",
     height: "20px",
     animationDelay: "0s",
+    backgroundColor: `#46d6ec`,
   },
   "& li:nth-child(6)": {
     left: "75%",
-    width: "110px",
-    height: "110px",
-    backgroundColor: `${[theme.palette.tertiary.main]}`,
+    width: "10px",
+    height: "10px",
+    backgroundColor: `#46d6ec`,
     animationDelay: "3s",
   },
   "& li:nth-child(7)": {
     left: "35%",
-    width: "150px",
-    height: "150px",
+    width: "23px",
+    height: "23px",
     animationDelay: "7s",
+    backgroundColor: `#46d6ec`,
   },
   "& li:nth-child(8)": {
     left: "50%",
@@ -183,6 +186,7 @@ export const Circles = styled("ul")(({ theme }) => ({
     backgroundColor: `${[theme.palette.secondary.main]}`,
     height: "25px",
     animationDelay: "15s",
+    // backgroundColor: `#46d6ec`,
     animationDuration: "45s",
   },
   "& li:nth-child(9)": {
@@ -194,11 +198,11 @@ export const Circles = styled("ul")(({ theme }) => ({
   },
   "& li:nth-child(10)": {
     left: "85%",
-    width: "150px",
-    height: "150px",
+    width: "10px",
+    height: "10px",
+    // backgroundColor: `#46d6ec`,
     animationDelay: "0s",
     backgroundColor: `${[theme.palette.primary.main]}`,
-
     animationDuration: "11s",
   },
 }));

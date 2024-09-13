@@ -9,8 +9,8 @@ import {
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { PortfolioWrapper } from "./PortfolioWrapper";
-// import { Heading } from "../../components/Heading";
 import { Button } from "@mui/material";
+// import { Heading } from "../../components/Heading";
 // import { Button } from "../../components/Button";
 // import { ArrowUpRight02Icon } from "hugeicons-react";
 
@@ -19,14 +19,7 @@ export const Portfolio = () => {
     <section id="portfolio">
       <Wrapper>
         <Box sx={{ width: "100%" }}>
-          <Typography
-            variant="h5"
-            sx={{
-              margin: "0 auto",
-              textTransform: "uppercase",
-              width: "max-content",
-            }}
-          >
+          <Typography variant="h3" textAlign="center">
             We have done this several times
           </Typography>
           <NumbersWrapper>

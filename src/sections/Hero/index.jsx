@@ -15,29 +15,48 @@ import {
   //  ArrowRight04Icon
 } from "hugeicons-react";
 import { Button } from "../../components/Button";
+import { useTheme } from "@mui/material";
 
 export const Hero = () => {
+  const theme = useTheme();
   return (
     <Wrapper id="hero">
       <HeroContents>
+        <HeroImage />
         <HeroText>
           {/* <TextGradient>
             <Typography variant="h6" fontWeight={600}>
               VectorWorks
             </Typography>
           </TextGradient> */}
-          <Typography variant="h2" fontWeight={600} marginBottom="1rem">
+          <Typography
+            variant="h2"
+            fontWeight={600}
+            marginBottom="1rem"
+            textAlign="center"
+          >
             {/* BRINGING YOUR WEB3 DREAMS TO LIFE.  */}
-            Bringing Your Web3 Dreams To Life.
+            <span style={{ color: `${[theme.palette.primary.main]}` }}>
+              Bringing{" "}
+            </span>{" "}
+            Your Web3 Dreams To{" "}
+            <span style={{ color: `${[theme.palette.primary.main]}` }}>
+              Life.
+            </span>
           </Typography>
-          <Typography variant="h6" width={400}>
+          <Typography
+            variant="h6"
+            width={400}
+            textAlign="center"
+            margin="0 auto"
+          >
             We are a leading web3 agency helping businesses thrive by providing
             state-of-the-art digital solutions.
           </Typography>
-
-          <Button>Get Started</Button>
+          <div style={{ width: "fit-content", margin: "0 auto" }}>
+            <Button>Get Started</Button>
+          </div>
         </HeroText>
-        <HeroImage />
       </HeroContents>
       <BottomArrow
         // initial={{ marginTop: "-10px" }}
