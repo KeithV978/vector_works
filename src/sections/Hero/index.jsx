@@ -27,7 +27,8 @@ export const Hero = () => {
             </Typography>
           </TextGradient> */}
           <Typography variant="h2" fontWeight={600} marginBottom="1rem">
-            BRINGING YOUR WEB3 DREAMS TO LIFE.
+            {/* BRINGING YOUR WEB3 DREAMS TO LIFE.  */}
+            Bringing Your Web3 Dreams To Life.
           </Typography>
           <Typography variant="h6" width={400}>
             We are a leading web3 agency helping businesses thrive by providing

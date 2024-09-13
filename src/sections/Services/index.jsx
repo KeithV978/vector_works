@@ -1,171 +1,78 @@
 import React from "react";
-import { Image, Wrapper } from "./styles";
-import { styled } from "@mui/material";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
+import {
+  Back,
+  CardContainer,
+  CardWrapper,
+  Front,
+  Image,
+  ImageWrappper,
+  Wrapper,
+} from "./styles";
+
+// import Typography from "@mui/material/Typography";
 // import { Heading } from "../../components/Heading";
-import { Button } from "../../components/Button";
+// import { Button } from "../../components/Button";
 
 // icons
 import sc from "../../assets/icons/sc.png";
 import dapps from "../../assets/icons/dapps.png";
 import graphics from "../../assets/icons/graphics.png";
 import web from "../../assets/icons/web_dev.png";
+
 // import { motion } from "framer-motion";
-import { ArrowUpRight01Icon } from "hugeicons-react";
+// import { ArrowUpRight01Icon } from "hugeicons-react";
 
-const Card = ({
-  borderTop,
-  borderBottom,
-  borderLeft,
-  borderRight,
-  alignItems,
-  children,
-}) => {
-  return (
-    <Box
-      // component={motion.div}
-      // initial={{ scale: 1 }}
-      // whileHover={{ scale: 0.97 }}
-      // transition={{
-      // repeat: Infinity,
-      // repeatType: "reverse",
-      // duration: 0.3,
-      // }}
-
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: alignItems || "center",
-        justifyContent: "center",
-        width: "fit-content",
-        maxWidth: "390px",
-        minWidth: "260px",
-        borderTop: borderTop ? borderTop : "",
-        borderBottom: borderBottom ? borderBottom : "",
-        borderLeft: borderLeft ? borderLeft : "",
-        borderRight: borderRight ? borderRight : "",
-        padding: "1.5rem",
-        borderRadius: "20px",
-        // margin: margin ? margin : "1rem initial",
-        backgroundColor: "#1c1c1ce6",
-      }}
-    >
-      {children}
-    </Box>
-  );
-};
-const CardHeader = styled(Typography)(({ theme }) => ({
-  fontWeight: 700,
-}));
-const CardBody = styled(Typography)(({ theme }) => ({
-  margin: "1rem auto",
-}));
 export const Services = () => {
   // const theme = useTheme();
   return (
     <Wrapper id="services">
-      <Grid container spacing={1}>
-        <Grid item xs={12} sm={6}>
-          <Stack direction="column" alignItems="end" spacing={1}>
-            {/* <Heading 
-              // borderBottom="2px solid #fff"
-              // borderRight="2px solid #fff"
-              {/* margin="0" */}
-            {/* > */}
-            <Box
-              sx={{
-                // background: `linear-gradient(85deg, #302f2f, #FFF)`,
-                // webkitBackgroundClip: "text",
-                // webkitTextFillColor: "transparent",
-                // backgroundClip: "text",
-                // textFillColor: "transparent",
-                textTransform: "uppercase",
-                // color: "#fff",
-              }}
-            >
-              <Typography variant="h4">what we can build for you.</Typography>
-            </Box>
-            {/* </Heading> */}
-            {/* Card 1 */}
-            <Card
-              borderBottom="2px solid #fff"
-              borderRight="2px solid #fff"
-              alignItems="end"
-            >
-              <Image src={dapps} alt="dapps" />
-              <CardHeader variant="h4">DAPP Development</CardHeader>
-              <CardBody variant="h6" textAlign="right">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </CardBody>
-              <Button>
-                Learn More <ArrowUpRight01Icon />
-              </Button>
-            </Card>
-            {/* Card 1 end */}
+      {/* Card 1 */}
+      <CardContainer>
+        <CardWrapper className="card">
+          <Front className="front">
+            <ImageWrappper>
+              <Image src={sc} />
+            </ImageWrappper>
+          </Front>
+          <Back className="back">Back</Back>
+        </CardWrapper>
+      </CardContainer>
 
-            {/* Card 2 */}
-            <Card
-              borderTop="2px solid #fff"
-              borderRight="2px solid #fff"
-              alignItems="end"
-            >
-              <Image src={sc} alt="smart contracts" />
-              <CardHeader variant="h4">Smart Contracts</CardHeader>
-              <CardBody variant="h6" textAlign="right">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </CardBody>
-              <Button>
-                Learn More <ArrowUpRight01Icon />
-              </Button>
-            </Card>
-            {/* Card 2 end */}
-          </Stack>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Stack direction="column" spacing={1}>
-            {/* Card 3 */}
-            <Card
-              borderBottom="2px solid #fff"
-              borderLeft="2px solid #fff"
-              alignItems="start"
-            >
-              <Image src={graphics} alt="smart contracts" />
-              <CardHeader variant="h4">Graphics Design</CardHeader>
-              <CardBody variant="h6" textAlign="left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </CardBody>
-              <Button>
-                Learn More <ArrowUpRight01Icon />
-              </Button>
-            </Card>
-            {/* Card 3 end */}
+      {/* Card 2 */}
+      <CardContainer>
+        <CardWrapper className="card">
+          <Front className="front">
+            <ImageWrappper>
+              <Image src={dapps} />
+            </ImageWrappper>
+          </Front>
+          <Back className="back">Back</Back>
+        </CardWrapper>
+      </CardContainer>
 
-            {/* Card 4 */}
-            <Card
-              borderTop="2px solid #fff"
-              borderLeft="2px solid #fff"
-              alignItems="start"
-            >
-              <Image src={web} alt="smart contracts" />
-              <CardHeader variant="h4">Web Development</CardHeader>
-              <CardBody variant="h6" textAlign="left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </CardBody>
-              <Button>
-                Learn More <ArrowUpRight01Icon />
-              </Button>
-            </Card>
-            {/* Card 4 end */}
-          </Stack>
-        </Grid>
-      </Grid>
+      {/* Card 3 */}
+      <CardContainer>
+        <CardWrapper className="card">
+          <Front className="front">
+            <ImageWrappper>
+              <Image src={graphics} />
+            </ImageWrappper>
+          </Front>
+          <Back className="back">Back</Back>
+        </CardWrapper>
+      </CardContainer>
+
+      {/* Card 4 */}
+      <CardContainer>
+        <CardWrapper className="card">
+          <Front className="front">
+            <ImageWrappper>
+              <Image src={web} />
+            </ImageWrappper>
+          </Front>
+          <Back className="back">Back</Back>
+        </CardWrapper>
+      </CardContainer>
     </Wrapper>
   );
 };

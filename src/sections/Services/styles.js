@@ -4,15 +4,17 @@ import { styled } from "@mui/material";
 
 export const Wrapper = styled("section")(({ theme }) => ({
   position: "relative",
-  // minHeight: "100vh",
+  minHeight: "700px",
   textAlign: "center",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  gap: "1rem",
   [theme.breakpoints.up("sm")]: {
     margin: "3rem auto",
+    // minHeight: "700px",
     "&::before": {
-      content: '""',
+      // content: '""',
       position: "absolute",
       top: "50%",
       left: "50%",
@@ -28,7 +30,67 @@ export const Wrapper = styled("section")(({ theme }) => ({
   },
 }));
 
-export const Image = styled("img")(({ theme }) => ({
+export const ImageWrappper = styled("div")(({ theme, src }) => ({
+  width: "70px",
+  height: "70px",
+  borderRadius: "50%",
+  backgroundColor: "#1c1c1c",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  [theme.breakpoints.up("sm")]: {
+    width: "100px",
+    height: "100px",
+  },
+}));
+
+export const Image = styled("div")(({ theme, src }) => ({
   width: "55px",
-  margin: ".5rem 0",
+  height: "55px",
+  backgroundImage: `url('${src}')`,
+  backgroundSize: "contain",
+  backgroundPosition: "center",
+}));
+export const CardContainer = styled("div")(({ theme }) => ({
+  width: "100%",
+  perspective: "800px",
+  "&:hover > .card": {
+    cursor: "pointer",
+    transform: "rotateY(180deg)",
+  },
+  [theme.breakpoints.up("sm")]: {
+    maxWidth: "300px",
+    height: "500px",
+  },
+}));
+export const CardWrapper = styled("div")(({ theme }) => ({
+  width: "100%",
+  height: "100%",
+  position: "relative",
+  transition: "all ease 1500ms",
+  transformStyle: "preserve-3d",
+}));
+
+const Faces = styled("div")(({ theme }) => ({
+  width: "100%",
+  height: "100%",
+  borderRadius: "2rem",
+  boxShadow: "0 0 5px 2px rgba(50, 50, 50, .25)",
+  position: "absolute",
+  backfaceVisibility: "hidden",
+  backgroundColor: "#ccc",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+}));
+
+export const Front = styled(Faces)(({ theme }) => ({
+  backgroundImage: "linear-gradient(45deg, #ddd, #ccc)",
+  // backgroundColor: "#ccc",
+}));
+export const Back = styled(Faces)(({ theme }) => ({
+  backgroundColor: "#1c1c1c",
+  transform: "rotateY(180deg)",
 }));

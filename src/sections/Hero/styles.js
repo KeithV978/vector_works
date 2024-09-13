@@ -131,6 +131,8 @@ export const Circles = styled("ul")(({ theme }) => ({
   "& li:nth-child(1)": {
     left: "25%",
     width: "80px",
+    backgroundColor: `${[theme.palette.tertiary.main]}`,
+
     height: "80px",
     animationDelay: "0s",
   },
@@ -140,6 +142,7 @@ export const Circles = styled("ul")(({ theme }) => ({
     height: "20px",
     animationDelay: "0s",
     animationDuration: "12s",
+    backgroundColor: `${[theme.palette.primary.main]}`,
   },
   "& li:nth-child(3)": {
     left: "70%",
@@ -150,6 +153,7 @@ export const Circles = styled("ul")(({ theme }) => ({
   "& li:nth-child(4)": {
     left: "40%",
     width: "60px",
+    backgroundColor: `${[theme.palette.secondary.main]}`,
     height: "60px",
     animationDelay: "0s",
     animationDuration: "18s",
@@ -164,6 +168,7 @@ export const Circles = styled("ul")(({ theme }) => ({
     left: "75%",
     width: "110px",
     height: "110px",
+    backgroundColor: `${[theme.palette.tertiary.main]}`,
     animationDelay: "3s",
   },
   "& li:nth-child(7)": {
@@ -175,6 +180,7 @@ export const Circles = styled("ul")(({ theme }) => ({
   "& li:nth-child(8)": {
     left: "50%",
     width: "25px",
+    backgroundColor: `${[theme.palette.secondary.main]}`,
     height: "25px",
     animationDelay: "15s",
     animationDuration: "45s",
@@ -191,6 +197,8 @@ export const Circles = styled("ul")(({ theme }) => ({
     width: "150px",
     height: "150px",
     animationDelay: "0s",
+    backgroundColor: `${[theme.palette.primary.main]}`,
+
     animationDuration: "11s",
   },
 }));
