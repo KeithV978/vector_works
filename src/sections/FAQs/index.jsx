@@ -26,7 +26,7 @@ const Accordion = styled((props) => (
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
     expandIcon={
-      <ArrowRight01Icon style={{ fontSize: "0.9rem", color: "#fff" }} />
+      <ArrowRight01Icon style={{ fontSize: "0.9rem", color: "#46d6ec" }} />
     }
     {...props}
   />
@@ -124,7 +124,7 @@ export const FAQs = () => {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
+              <Typography variant="h6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
                 eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -1,27 +1,28 @@
 import React from "react";
 import { Form, Input, InputWrapper, Textarea, Wrapper } from "./styles";
 import {
-  ContactIcon,
   Mail02Icon,
   Message01Icon,
   // MessageUser02Icon,
   UserIcon,
 } from "hugeicons-react";
-// import Button from "@mui/material/Button";
+import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { Button } from "../../components/Button";
+import { Links } from "./Links";
 
 export const Contact = () => {
   return (
     <Wrapper>
+      <Links />
       <Form component="form" noValidate>
         <Typography
           variant="h4"
           textAlign="center"
           sx={{ color: "tertiary.main" }}
         >
-          <ContactIcon /> Get In Touch
+          {" "}
+          Get In Touch
         </Typography>
         <InputWrapper>
           <UserIcon
@@ -56,7 +57,14 @@ export const Contact = () => {
           <Textarea rows={10} id="Message" />
         </InputWrapper>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Button>
+          <Button
+            sx={{
+              backgroundColor: "tertiary.main",
+              borderRadius: "15px",
+              width: "50%",
+              color: "#fff",
+            }}
+          >
             Send
             {/* <MessageUser02Icon style={{ marginLeft: "1rem" }} /> */}
           </Button>

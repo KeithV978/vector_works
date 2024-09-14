@@ -44,7 +44,7 @@ export const ImageWrapper = styled("div")(({ theme }) => ({
 export const Colorbar = styled("span")(({ theme }) => ({
   display: "inline-block",
   width: "200px",
-  height: "15px",
+  height: "10px",
   // background: `linear-gradient(348deg, ${[theme.palette.secondary.main]}, ${[
   //   theme.palette.tertiary.main,
   // ]}, ${[theme.palette.primary.main]})`,

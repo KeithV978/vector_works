@@ -19,11 +19,12 @@ const About = () => {
           flexDirection: { xs: "column", sm: "row" },
           alignItems: "center",
           justifyContent: "center",
+          padding: { xs: "1rem", sm: "" },
         }}
       >
         <Typography
           variant="body1"
-          sx={{ textAlign: { sm: "justify", xs: "left" } }}
+          sx={{ textAlign: { sm: "justify", xs: "initial" } }}
         >
           {/* <TitleText> */}
           {/* <PaintBrush04Icon color="inherit" width="50px" height="50px" /> */}

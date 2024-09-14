@@ -32,8 +32,7 @@ export const Services = () => {
         <Typography
           variant="h3"
           sx={{
-            textAlign: { sm: "center", xs: "center" },
-            paddingRight: ".5rem",
+            textAlign: "center",
           }}
         >
           <span style={{ color: `#46d6ec` }}>What We Can </span>

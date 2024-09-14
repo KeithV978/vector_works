@@ -15,6 +15,7 @@ export const Wrapper = styled(Box)(({ theme }) => ({
 
 export const NumbersWrapper = styled("div")(({ theme }) => ({
   width: "100%",
+  minHeight: "400px",
   display: "flex",
   justifyContent: "space-around",
   alignItems: "center",
@@ -22,7 +23,7 @@ export const NumbersWrapper = styled("div")(({ theme }) => ({
   flexDirection: "column",
   [theme.breakpoints.up("sm")]: {
     flexDirection: "row",
-    // minHeight: "40vh",
+    minHeight: "300px",
   },
 }));
 export const NumberCase = styled(Box)(({ theme }) => ({
@@ -63,7 +64,7 @@ export const CardWrapper = styled(Card)(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   maxWidth: "100%",
-  // maxHeight: "60vh",
+  margin: "1rem",
   backgroundColor: "#1c1c1c",
   padding: "2rem 1rem",
   transition: "ease all .3s",
@@ -77,19 +78,19 @@ export const CardWrapper = styled(Card)(({ theme }) => ({
   },
 }));
 export const CardImage = styled("div")(({ theme }) => ({
-  width: "90%",
-  // boxShadow: "4px 4px 10px #101010",
+  width: "100%",
   borderTopLeftRadius: "20px",
   borderTopRightRadius: "20px",
   padding: "1rem",
-  margin: "-2rem auto 0",
+  zIndex: 10,
+  backgroundColor: "#1c1c1c",
+  transition: "ease all .3s",
+  // boxShadow: "4px 4px 10px #101010",
+  // margin: "-2rem auto 0",
   // position: "absolute",
   // top: "50%",
   // left: "50%",
   // transform: "translate(-50%, -50%)",
-  zIndex: 10,
-  backgroundColor: "#1c1c1c",
-  transition: "ease all .3s",
 }));
 
 export const CardText = styled("div")(({ theme }) => ({

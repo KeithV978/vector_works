@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { HOME } from "../../utils/links";
 import { InnerWrapper, Logo, LogoWrapper, Nav, Ul, Wrapper } from "./styles";
 import {
+  MenuCircleIcon,
   // Mail01Icon,
   TelegramIcon,
   TwitterIcon,
@@ -12,12 +13,13 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import logo from "../../assets/images/logo/logo.png";
 import { Button, IconButton } from "@mui/material";
-// import Drawer from "./Drawer";
+import { TextGradient } from "../../sections/Hero/styles";
+import Drawer from "./Drawer";
 // import { useTheme } from "@mui/material/";
 
 const Header = React.memo(() => {
   const [scrollHeight, setScrollHeight] = React.useState(window.scrollY);
-  // const [menuOpen, setMenuOpen] = React.useState(false);
+  const [menuOpen, setMenuOpen] = React.useState(false);
   const handleScroll = () => setScrollHeight(window.scrollY);
 
   React.useEffect(() => {
@@ -25,9 +27,9 @@ const Header = React.memo(() => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // const handleMenuOpen = () => {
-  //   setMenuOpen(!menuOpen);
-  // };
+  const handleMenuOpen = () => {
+    setMenuOpen(!menuOpen);
+  };
   // const theme = useTheme();
 
   return (
@@ -36,12 +38,16 @@ const Header = React.memo(() => {
     >
       <InnerWrapper>
         <Link to={HOME}>
-          <Stack direction="row">
-            <LogoWrapper>
-              <Logo src={logo} alt="vector logo" />
-            </LogoWrapper>
-            <Typography variant="h6">ectorWorks</Typography>
-          </Stack>
+          <TextGradient>
+            <Stack direction="row">
+              <LogoWrapper>
+                <Logo src={logo} alt="vector logo" />
+              </LogoWrapper>
+              <Typography variant="h6" fontWeight={700}>
+                ectorWorks
+              </Typography>
+            </Stack>
+          </TextGradient>
         </Link>
         <Nav>
           <Ul>
@@ -107,20 +113,20 @@ const Header = React.memo(() => {
               </Button>
             </li>
           </Ul>
-          {/* <IconButton
-            onClick={handleMenuOpen}
-            sx={{
-              display: { sm: "none", xs: "block" },
-              float: "left",
-              transition: "ease all .3s",
-              transform: menuOpen ? "rotate(-45deg)" : "",
-            }}
-          >
-            <MenuCircleIcon color="#fcfcfc" />
-          </IconButton> */}
         </Nav>
+        <IconButton
+          onClick={handleMenuOpen}
+          sx={{
+            display: { sm: "none", xs: "block" },
+            float: "left",
+            transition: "ease all .3s",
+            transform: menuOpen ? "rotate(-45deg)" : "",
+          }}
+        >
+          <MenuCircleIcon color="#fcfcfc" />
+        </IconButton>
       </InnerWrapper>
-      {/* <Drawer menuOpen={menuOpen} setMenuOpen={handleMenuOpen} /> */}
+      <Drawer menuOpen={menuOpen} setMenuOpen={handleMenuOpen} />
     </Wrapper>
   );
 });

@@ -20,7 +20,7 @@ export const Portfolio = () => {
       <Wrapper>
         <Box sx={{ width: "100%" }}>
           <Typography variant="h3" textAlign="center">
-            We have done this several times
+            We Have Done This Several Times
           </Typography>
           <NumbersWrapper>
             <NumberCase>

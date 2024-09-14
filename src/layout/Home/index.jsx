@@ -6,7 +6,7 @@ import { Services } from "../../sections/Services";
 import { Portfolio } from "../../sections/Portfolio";
 import { Contact } from "../../sections/Contact";
 import { FAQs } from "../../sections/FAQs";
-// import { Footer } from "../../components/Footer";
+import { Footer } from "../../components/Footer";
 
 const Home = () => {
   document.title = "Vector Works";
@@ -20,7 +20,7 @@ const Home = () => {
         <FAQs />
         <Contact />
       </Container>
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 };

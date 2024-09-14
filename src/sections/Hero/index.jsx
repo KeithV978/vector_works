@@ -1,5 +1,5 @@
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
+// import Link from "@mui/material/Link";
 import {
   BottomArrow,
   Circles,
@@ -10,10 +10,9 @@ import {
   // TextGradient,
   Wrapper,
 } from "./styles";
-import {
-  ArrowDownDoubleIcon,
-  //  ArrowRight04Icon
-} from "hugeicons-react";
+import // ArrowDownDoubleIcon,
+//  ArrowRight04Icon
+"hugeicons-react";
 import { Button } from "../../components/Button";
 import { useTheme } from "@mui/material";
 
@@ -68,9 +67,9 @@ export const Hero = () => {
         }}
         style={{ cursor: "pointer" }}
       >
-        <Link href="#about" color="inherit">
-          <ArrowDownDoubleIcon size={40} />
-        </Link>
+        {/* <Link href="#about" color="inherit">
+          <ArrowDownDoubleIcon size={35} />
+        </Link> */}
       </BottomArrow>
       <Circles>
         <li></li>

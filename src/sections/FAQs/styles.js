@@ -1,10 +1,13 @@
 import { styled } from "@mui/material";
 
 export const Wrapper = styled("section")(({ theme }) => ({
-  // minHeight: "80vh",
+  minHeight: "400px",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
+  [theme.breakpoints.up("sm")]: {
+    minHeight: "600px",
+  },
 }));
 
 export const Titletext = styled("div")(({ theme }) => ({

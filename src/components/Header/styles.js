@@ -6,7 +6,6 @@ import { styled } from "@mui/material";
 
 export const Wrapper = styled("header")(({ theme }) => ({
   width: "100%",
-  padding: "1rem 0",
   zIndex: 999,
   backdropFilter: "blur(10px)",
   background: "inherit",
@@ -18,7 +17,10 @@ export const InnerWrapper = styled("div")(({ theme }) => ({
   flexDirection: "row",
   justifyContent: "space-between",
   width: "100%",
-  [theme.breakpoints.up("sm")]: {},
+  padding: "1rem",
+  [theme.breakpoints.up("sm")]: {
+    padding: "1rem 0",
+  },
 }));
 export const LogoWrapper = styled("div")(({ theme }) => ({
   display: "flex",
@@ -31,8 +33,10 @@ export const Logo = styled("img")(({ theme }) => ({
   // [theme.breakpoints.up("sm")]: {},
 }));
 export const Nav = styled("nav")(({ theme }) => ({
+  display: "none",
   [theme.breakpoints.up("sm")]: {
     // width: "80%",
+    display: "block",
   },
   [theme.breakpoints.up("md")]: {
     // width: "60%",

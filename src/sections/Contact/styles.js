@@ -2,11 +2,11 @@ import { styled } from "@mui/material";
 import Box from "@mui/material/Box";
 
 export const Wrapper = styled("section")(({ theme }) => ({
-  // minHeight: "100vh",
+  minHeight: "600px",
   width: "100%",
   display: "flex",
-  flexDirection: "column",
   position: "relative",
+  flexDirection: "column",
   justifyContent: "center",
   // backgroundColor: `${[theme.palette.secondary.main]}`,
   // border: "5px solid #fff",
@@ -14,7 +14,7 @@ export const Wrapper = styled("section")(({ theme }) => ({
 
   [theme.breakpoints.up("sm")]: {
     flexDirection: "row",
-    justifyContent: "end",
+    justifyContent: "space-between",
 
     "&::before": {
       // content: '""',
@@ -42,10 +42,11 @@ export const Form = styled(Box)(({ theme }) => ({
   borderRadius: "20px",
   float: "right",
   padding: "1rem",
-  backgroundImage: `linear-gradient(272deg, #AD1457, #8E24AA)`,
+  // backgroundImage: `linear-gradient(272deg, #AD1457, #8E24AA)`,
+  backgroundColor: "#2b2b2b",
   [theme.breakpoints.up("sm")]: {
     width: "380px",
-    backgroundImage: "none",
+    backgroundColor: "none",
     padding: "1rem",
   },
 }));
@@ -65,6 +66,7 @@ export const Input = styled("input")(({ theme }) => ({
   backgroundColor: "#fff",
   padding: ".5rem 1rem",
   // textAlign: "center",
+  marginRight: "2rem",
   color: "#1c1c1c",
   width: "100%",
   fontSize: "1.1rem",
@@ -83,6 +85,7 @@ export const Textarea = styled("textarea")(({ theme }) => ({
   outline: "none",
   backgroundColor: "#fff",
   padding: ".5rem 1rem",
+  marginRight: "2rem",
   // textAlign: "center",
   color: "#1c1c1c",
   width: "100%",

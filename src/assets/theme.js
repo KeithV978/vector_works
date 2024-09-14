@@ -15,7 +15,11 @@ let theme = createTheme({
     background: "#1c1c1c",
   },
   typography: {
-    fontFamily: "Ubuntu-Regular  Arial, sans-serif",
+    fontFamily: "Ubuntu-Regular, Rowdies-Bold,  Arial, sans-serif",
+    h1: {
+      fontFamily: '"Rowdies-Bold", "Open-Sans"',
+      color: "#fff",
+    },
     h2: {
       fontFamily: '"Ubuntu-Bold", "Open-Sans"',
       color: "#fff",
@@ -25,12 +29,12 @@ let theme = createTheme({
       color: "#fff",
     },
     h4: {
-      fontFamily: '"Balthazar", "Open-Sans"',
+      fontFamily: '"Ubuntu-Bold", "Open-Sans"',
       color: "#fff",
       fontWeight: 700,
     },
     h6: {
-      // fontFamily: "Comme",
+      fontFamily: '"Ubuntu-Bold", "Open-Sans"',
       color: "#fff",
     },
     body1: {

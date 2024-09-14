@@ -44,8 +44,8 @@ export const Body = styled("div")(({ theme }) => ({
 }));
 
 export const ImageWrapper = styled("div")(({ theme, src }) => ({
-  width: "70px",
-  height: "70px",
+  width: "90px",
+  height: "90px",
   borderRadius: "50%",
   backgroundColor: "#1c1c1c",
   display: "flex",
@@ -67,6 +67,7 @@ export const Image = styled("div")(({ theme, src }) => ({
 }));
 export const CardContainer = styled("div")(({ theme }) => ({
   width: "100%",
+  height: "450px",
   perspective: "800px",
   "&:hover > .card": {
     cursor: "pointer",
@@ -74,7 +75,6 @@ export const CardContainer = styled("div")(({ theme }) => ({
   },
   [theme.breakpoints.up("sm")]: {
     maxWidth: "300px",
-    height: "500px",
   },
 }));
 export const CardWrapper = styled("div")(({ theme }) => ({
@@ -106,4 +106,5 @@ export const Front = styled(Faces)(({ theme }) => ({
 export const Back = styled(Faces)(({ theme }) => ({
   backgroundColor: "#1c1c1c",
   transform: "rotateY(180deg)",
+  padding: "1rem",
 }));
