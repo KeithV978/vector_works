@@ -46,7 +46,7 @@ export const Nav = styled("nav")(({ theme }) => ({
 export const Ul = styled("ul")(({ theme }) => ({
   display: "flex",
   listStyle: "none",
-  gap: 5,
+  gap: 2,
   alignItems: "center",
   justifyContent: "center",
 }));

@@ -1,12 +1,10 @@
 import { styled } from "@mui/material";
 import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 export const Wrapper = styled(Box)(({ theme }) => ({
   width: "100%",
-  minHeight: "600px",
+  // minHeight: "600px",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -15,15 +13,15 @@ export const Wrapper = styled(Box)(({ theme }) => ({
 
 export const NumbersWrapper = styled("div")(({ theme }) => ({
   width: "100%",
-  minHeight: "400px",
+  // minHeight: "400px",
   display: "flex",
   justifyContent: "space-around",
   alignItems: "center",
-  padding: "1rem 0",
+  padding: "3rem 0",
   flexDirection: "column",
   [theme.breakpoints.up("sm")]: {
     flexDirection: "row",
-    minHeight: "300px",
+    // minHeight: "300px",
   },
 }));
 export const NumberCase = styled(Box)(({ theme }) => ({
@@ -40,15 +38,6 @@ export const Number = styled(Typography)(({ theme }) => ({
   textAlign: "center",
 }));
 
-export const CardContainer = styled(Grid)(({ theme }) => ({
-  flexDirection: "column",
-  flexWrap: "wrap",
-  [theme.breakpoints.up("sm")]: {
-    // justifyContent: "space-between",
-    // alignItems: "space-around",
-    flexDirection: "row",
-  },
-}));
 export const GradNumber = styled("div")(({ theme }) => ({
   background: `linear-gradient(50deg, ${[theme.palette.primary.main]}, ${[
     theme.palette.secondary.main,
@@ -59,46 +48,106 @@ export const GradNumber = styled("div")(({ theme }) => ({
   textFillColor: "transparent",
 }));
 
-export const CardWrapper = styled(Card)(({ theme }) => ({
+// Flipping Card Operation.
+export const Body = styled("div")(({ theme }) => ({
+  position: "relative",
+  minHeight: "500px",
+  textAlign: "center",
   display: "flex",
   flexDirection: "column",
+  justifyContent: "center",
   alignItems: "center",
-  maxWidth: "100%",
-  margin: "1rem",
-  backgroundColor: "#1c1c1c",
-  padding: "2rem 1rem",
-  transition: "ease all .3s",
-  position: "relative",
-  border: "2px solid grey",
-  borderRadius: "10px",
-  boxShadow: "4px 6px 10px #101010",
+  gap: "1rem",
   [theme.breakpoints.up("sm")]: {
-    borderRadius: "20px",
-    maxWidth: "360px",
+    flexDirection: "row",
+    margin: "3rem auto",
+    // minHeight: "700px",
   },
 }));
-export const CardImage = styled("div")(({ theme }) => ({
-  width: "100%",
-  borderTopLeftRadius: "20px",
-  borderTopRightRadius: "20px",
-  padding: "1rem",
-  zIndex: 10,
-  backgroundColor: "#1c1c1c",
-  transition: "ease all .3s",
-  // boxShadow: "4px 4px 10px #101010",
-  // margin: "-2rem auto 0",
-  // position: "absolute",
-  // top: "50%",
-  // left: "50%",
-  // transform: "translate(-50%, -50%)",
-}));
 
-export const CardText = styled("div")(({ theme }) => ({
-  transition: "ease all .3s",
-  // height: 0,
+export const ImageWrapper = styled("div")(({ theme, src }) => ({
+  width: "90px",
+  height: "90px",
+  borderRadius: "50%",
+  backgroundColor: "#1c1c1c",
   display: "flex",
   flexDirection: "column",
-  justifyCcontent: "center",
+  justifyContent: "center",
   alignItems: "center",
-  // opacity: 0,
+  [theme.breakpoints.up("sm")]: {
+    width: "100px",
+    height: "100px",
+  },
+}));
+
+export const Image = styled("div")(({ theme, src }) => ({
+  width: "55px",
+  height: "55px",
+  backgroundImage: `url('${src}')`,
+  backgroundSize: "contain",
+  backgroundPosition: "center",
+}));
+export const CardContainer = styled("div")(({ theme }) => ({
+  width: "100%",
+  height: "450px",
+  perspective: "800px",
+  "&:hover > .card": {
+    cursor: "pointer",
+    transform: "rotateY(180deg)",
+  },
+  [theme.breakpoints.up("sm")]: {
+    // maxWidth: "300px",
+  },
+}));
+export const CardWrapper = styled("div")(({ theme }) => ({
+  width: "100%",
+  height: "100%",
+  position: "relative",
+  transition: "all ease 1500ms",
+  transformStyle: "preserve-3d",
+}));
+
+const Faces = styled("div")(({ theme }) => ({
+  width: "100%",
+  height: "100%",
+  borderRadius: "2rem",
+  boxShadow: "0 0 5px 2px rgba(50, 50, 50, .25)",
+  position: "absolute",
+  backfaceVisibility: "hidden",
+  // backgroundColor: "#ccc",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+}));
+
+export const Front = styled(Faces)(({ theme, bg }) => ({
+  backgroundImage: `url('${bg}')`,
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  color: "#ccc",
+  position: "relative",
+  // backgroundColor: "#212121",
+  border: "1px solid #2e2e2e",
+  overflow: "hidden",
+  "&::before": {
+    content: '""',
+    position: "absolute",
+    top: 0,
+    right: 0,
+    height: "100%",
+    width: "100%",
+    zIndex: -1,
+    // filter: "blur(5px)",
+    // backgroundImage: "linear-gradient(45deg, #ddd, #ccc)",
+    background: `linear-gradient(248deg, ${[
+      theme.palette.secondary.main,
+    ]}, #1D0835, #1D0835)`,
+  },
+}));
+export const Back = styled(Faces)(({ theme }) => ({
+  backgroundColor: "#1c1c1c",
+  transform: "rotateY(180deg)",
+  color: "#ccc",
+  padding: "1rem",
 }));

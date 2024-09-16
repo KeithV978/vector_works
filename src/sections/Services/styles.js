@@ -1,110 +1,60 @@
 import { styled } from "@mui/material";
-// import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 // import Button from "@mui/material/Button";
-import bg from "../../assets/images/services/background.png";
+// import bg from "../../assets/images/services/background.png";
 
 export const Wrapper = styled("section")(({ theme }) => ({
   minHeight: "700px",
-  backgroundImage: `url('${bg}')`,
+  // backgroundImage: `url('${bg}')`,
   backgroundSize: "30%",
   backgroundRepeat: "repeat",
   backgroundPosition: "center",
   padding: "1rem",
   borderRadius: "30px",
 }));
-
-export const Body = styled("div")(({ theme }) => ({
-  position: "relative",
-  minHeight: "500px",
-  textAlign: "center",
+export const Cards = styled("div")(({ theme }) => ({
+  // width: "100%",
   display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
+  flexWrap: "wrap",
+  // justifyContent: "space-evenly",
   gap: "1rem",
+  margin: "2rem auto",
   [theme.breakpoints.up("sm")]: {
-    flexDirection: "row",
-    margin: "3rem auto",
-    // minHeight: "700px",
-    // "&::before": {
-    // content: '""',
-    // position: "absolute",
-    // top: "50%",
-    // left: "50%",
-    // transform: "translate(-50%, -50%)",
-    // height: "40%",
-    // width: "30%",
-    // background: `linear-gradient(248deg, #46d6ec, #25322F)`,
-    // zIndex: -1,
-    // filter: "blur(55px)",
-    // border: "5px solid #fff",
-    // backgroundColor: `${[theme.palette.secondary.main]}`,
-    // },
+    // width: "fit-content",
   },
 }));
-
-export const ImageWrapper = styled("div")(({ theme, src }) => ({
-  width: "90px",
-  height: "90px",
-  borderRadius: "50%",
-  backgroundColor: "#1c1c1c",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  [theme.breakpoints.up("sm")]: {
-    width: "100px",
-    height: "100px",
-  },
+export const Card = styled("div")(({ theme }) => ({
+  backgroundColor: "#212121",
+  border: "1px solid #4b4b4b",
+  maxWidth: "380px",
+  borderRadius: "10px",
+  padding: "1.5rem",
 }));
-
-export const Image = styled("div")(({ theme, src }) => ({
-  width: "55px",
-  height: "55px",
-  backgroundImage: `url('${src}')`,
-  backgroundSize: "contain",
-  backgroundPosition: "center",
+export const CardTitle = styled(Typography)(({ theme }) => ({
+  color: "#ccc",
+  marginBottom: "1rem",
 }));
-export const CardContainer = styled("div")(({ theme }) => ({
-  width: "100%",
-  height: "450px",
-  perspective: "800px",
-  "&:hover > .card": {
-    cursor: "pointer",
-    transform: "rotateY(180deg)",
-  },
-  [theme.breakpoints.up("sm")]: {
-    maxWidth: "300px",
-  },
+export const CardText = styled(Typography)(({ theme }) => ({
+  color: "#ccc",
 }));
-export const CardWrapper = styled("div")(({ theme }) => ({
-  width: "100%",
-  height: "100%",
+export const CardImageWrapper = styled("div")(({ theme }) => ({
+  borderRadius: "3px",
+  padding: ".5rem",
+  width: "fit-content",
+  marginBottom: "2rem",
   position: "relative",
-  transition: "all ease 1500ms",
-  transformStyle: "preserve-3d",
+  "&:after": {
+    content: "''",
+    height: "100%",
+    width: "100%",
+    position: "absolute",
+    // zIndex: -1,
+    top: 0,
+    left: 0,
+    backgroundColor: "#1750d529",
+    filter: "blur(5px)",
+  },
 }));
-
-const Faces = styled("div")(({ theme }) => ({
-  width: "100%",
-  height: "100%",
-  borderRadius: "2rem",
-  boxShadow: "0 0 5px 2px rgba(50, 50, 50, .25)",
-  position: "absolute",
-  backfaceVisibility: "hidden",
-  backgroundColor: "#ccc",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-}));
-
-export const Front = styled(Faces)(({ theme }) => ({
-  backgroundImage: "linear-gradient(45deg, #ddd, #ccc)",
-  // backgroundColor: "#ccc",
-}));
-export const Back = styled(Faces)(({ theme }) => ({
-  backgroundColor: "#1c1c1c",
-  transform: "rotateY(180deg)",
-  padding: "1rem",
+export const CardImage = styled("img")(({ theme }) => ({
+  width: "30px",
 }));

@@ -1,12 +1,11 @@
 import React from "react";
 import {
-  Back,
-  Body,
-  CardContainer,
-  CardWrapper,
-  Front,
-  Image,
-  ImageWrapper,
+  Card,
+  CardImage,
+  CardImageWrapper,
+  Cards,
+  CardText,
+  CardTitle,
   Wrapper,
 } from "./styles";
 
@@ -30,7 +29,7 @@ export const Services = () => {
     <Wrapper id="services">
       <div>
         <Typography
-          variant="h3"
+          variant="h4"
           sx={{
             textAlign: "center",
           }}
@@ -38,65 +37,57 @@ export const Services = () => {
           <span style={{ color: `#46d6ec` }}>What We Can </span>
           Do For You.
         </Typography>
-        <Typography variant="h6" textAlign="center">
+        <Typography variant="body1" textAlign="center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod
         </Typography>
       </div>
-      <Body>
-        {/* Card 1 */}
-        {[
-          {
-            image: sc,
-            headText: "Smart Contracts",
-            text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-          },
-          {
-            image: dapps,
-            headText: "DAPPS",
-            text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-          },
-          {
-            image: graphics,
-            headText: "Graphics",
-            text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-          },
-          {
-            image: web,
-            headText: "Web Apps/Sites",
-            text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
-          },
-        ].map((item, index) => {
-          return (
-            <CardContainer>
-              <CardWrapper className="card">
-                <Front className="front">
-                  <ImageWrapper>
-                    <Image src={item.image} />
-                  </ImageWrapper>
-                  <Typography
-                    variant="body1"
-                    fontWeight={600}
-                    marginBottom="1rem"
-                    color="#1c1c1c"
-                  >
-                    {item.headText}
-                  </Typography>
-                </Front>
-                <Back className="back">
-                  <Typography variant="h5" fontWeight={600} marginBottom="1rem">
-                    {item.headText}
-                  </Typography>
-                  <Image src={item.image} />
-                  <Typography variant="h6" marginTop="2rem">
-                    {item.text}
-                  </Typography>
-                </Back>
-              </CardWrapper>
-            </CardContainer>
-          );
-        })}
-      </Body>
+      <div>
+        <Cards>
+          {[
+            {
+              title: "Smart Contract",
+              text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+              icon: sc,
+            },
+            {
+              title: "DAPPs",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum sit amet, consectetur adipiscing elit, sed do",
+              icon: dapps,
+            },
+            {
+              title: "Graphics",
+              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum, consectetur adipiscing elit, sed do",
+              icon: graphics,
+            },
+            {
+              title: "Web",
+              text: "We build stylish, modern and useful web apps and sites. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+              icon: web,
+            },
+            {
+              title: "Web",
+              text: "We build stylish, modern and useful web apps and sites. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+              icon: web,
+            },
+            {
+              title: "Web",
+              text: "We build stylish, modern and useful web apps and sites. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+              icon: web,
+            },
+          ].map((item, index) => {
+            return (
+              <Card key={index}>
+                <CardImageWrapper>
+                  <CardImage src={item.icon} />
+                </CardImageWrapper>
+                <CardTitle variant="h6">{item.title}</CardTitle>
+                <CardText variant="body1">{item.text}</CardText>
+              </Card>
+            );
+          })}
+        </Cards>
+      </div>
     </Wrapper>
   );
 };

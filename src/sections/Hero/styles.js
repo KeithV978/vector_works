@@ -95,9 +95,9 @@ export const HeroText = styled("div")(({ theme }) => ({
 }));
 export const TextGradient = styled("div")(({ theme }) => ({
   width: "min-content",
-  background: `linear-gradient(250deg, ${[theme.palette.primary.main]} 1%, ${[
-    theme.palette.tertiary.main,
-  ]} , ${[theme.palette.secondary.main]}) 10%`,
+  background: `linear-gradient(45deg, ${[theme.palette.secondary.main]} 10%, ${[
+    theme.palette.primary.main,
+  ]})`,
   webkitBackgroundClip: "text",
   webkitTextFillColor: "transparent",
   backgroundClip: "text",

@@ -24,7 +24,7 @@ const About = () => {
       >
         <Typography
           variant="body1"
-          sx={{ textAlign: { sm: "justify", xs: "initial" } }}
+          sx={{ textAlign: { sm: "justify", xs: "initial" }, lineHeight: '1rem' }}
         >
           {/* <TitleText> */}
           {/* <PaintBrush04Icon color="inherit" width="50px" height="50px" /> */}

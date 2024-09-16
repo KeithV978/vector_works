@@ -54,7 +54,7 @@ const Header = React.memo(() => {
             <li>
               <IconButton sx={{ display: "flex", flexDirection: "column" }}>
                 <TelegramIcon
-                  style={{ color: "#ccc", width: "1rem", height: "1rem" }}
+                  style={{ color: "#ccc", width: "1.3rem", height: "1.3rem" }}
                 />
                 {/* <span
                   style={{
@@ -70,7 +70,7 @@ const Header = React.memo(() => {
             <li>
               <IconButton sx={{ display: "flex", flexDirection: "column" }}>
                 <TwitterIcon
-                  style={{ color: "#ccc", width: "1rem", height: "1rem" }}
+                  style={{ color: "#ccc", width: "1.3rem", height: "1.3rem" }}
                 />
                 {/* <span
                   style={{
@@ -86,7 +86,7 @@ const Header = React.memo(() => {
             <li>
               <IconButton sx={{ display: "flex", flexDirection: "column" }}>
                 <WhatsappBusinessIcon
-                  style={{ color: "#ccc", width: "1rem", height: "1rem" }}
+                  style={{ color: "#ccc", width: "1.3rem", height: "1.3rem" }}
                 />
                 {/* <span
                   style={{
