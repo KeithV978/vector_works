@@ -87,6 +87,7 @@ export const HeroText = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
+  padding: "1rem",
   [theme.breakpoints.up("sm")]: {
     margin: "0 auto",
     width: "60%",

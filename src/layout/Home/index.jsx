@@ -4,10 +4,10 @@ import { Hero } from "../../sections/Hero";
 import Container from "@mui/material/Container";
 import { Services } from "../../sections/Services";
 import { Portfolio } from "../../sections/Portfolio";
-import { Contact } from "../../sections/Contact";
+// import { Contact } from "../../sections/Contact";
 import ProjectsLogos from "../../sections/ProjectsLogos";
-import { FAQs } from "../../sections/FAQs";
-import { Footer } from "../../components/Footer";
+// import { FAQs } from "../../sections/FAQs";
+// import { Footer } from "../../components/Footer";
 
 const Home = () => {
   document.title = "Vector Works";
@@ -17,12 +17,13 @@ const Home = () => {
       <Container>
         <ProjectsLogos />
         <Services />
-        {/* <About /> */}
         <Portfolio />
+        {/* <About /> */}
+        {/* 
         <FAQs />
-        <Contact />
+        <Contact /> */}
       </Container>
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 };

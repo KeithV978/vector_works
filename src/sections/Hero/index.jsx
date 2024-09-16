@@ -45,6 +45,7 @@ export const Hero = () => {
           </Typography>
           <Typography
             variant="h6"
+            fontWeight={300}
             width={400}
             textAlign="center"
             margin="0 auto"

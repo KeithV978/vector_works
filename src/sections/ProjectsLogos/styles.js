@@ -12,7 +12,6 @@ export const Slider = styled("div")(({ theme }) => ({
   position: "relative",
   width: "100%",
   display: "flex",
-
   "&:before": {
     content: "''",
     height: "100px",
@@ -36,8 +35,8 @@ export const Slider = styled("div")(({ theme }) => ({
     background: "linear-gradient(to right, #1c1c1c, #ffffff00)",
   },
 
-  "&:hover .slide": {
-    // animationPlayState: "paused",
+  "&:hover + .slide": {
+    animationPlayState: "paused",
   },
 }));
 

@@ -31,8 +31,9 @@ export const Card = styled("div")(({ theme }) => ({
   padding: "1.5rem",
 }));
 export const CardTitle = styled(Typography)(({ theme }) => ({
-  color: "#ccc",
-  marginBottom: "1rem",
+  // color: `${[theme.palette.primary.main]}`,
+  color: "#fff",
+  marginBottom: ".5rem",
 }));
 export const CardText = styled(Typography)(({ theme }) => ({
   color: "#ccc",

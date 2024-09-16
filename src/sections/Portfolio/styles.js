@@ -7,45 +7,36 @@ export const Wrapper = styled(Box)(({ theme }) => ({
   // minHeight: "600px",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
+  justifyContent: "space-between",
+  // alignItems: "center",
+  padding: "3rem 2rem",
+  [theme.breakpoints.up("sm")]: {
+    padding: "3rem 0",
+    flexDirection: "row",
+  },
 }));
 
 export const NumbersWrapper = styled("div")(({ theme }) => ({
   width: "100%",
-  // minHeight: "400px",
-  display: "flex",
-  justifyContent: "space-around",
-  alignItems: "center",
-  padding: "3rem 0",
-  flexDirection: "column",
-  [theme.breakpoints.up("sm")]: {
-    flexDirection: "row",
-    // minHeight: "300px",
-  },
+  [theme.breakpoints.up("sm")]: {},
 }));
-export const NumberCase = styled(Box)(({ theme }) => ({
-  minWidth: "fit-content",
-  textAlign: "center",
-  paddingLeft: ".5rem",
-  [theme.breakpoints.up("sm")]: {
-    // borderLeft: "3px solid #fff",
-  },
-}));
-export const Number = styled(Typography)(({ theme }) => ({
-  color: `${[theme.palette.primary.main]}`,
-  fontWeight: 700,
-  textAlign: "center",
-}));
-
-export const GradNumber = styled("div")(({ theme }) => ({
-  background: `linear-gradient(50deg, ${[theme.palette.primary.main]}, ${[
-    theme.palette.secondary.main,
-  ]}) 10%`,
+export const GradientNumber = styled("div")(({ gradient }) => ({
+  width: "fit-content",
+  background: gradient,
   webkitBackgroundClip: "text",
   webkitTextFillColor: "transparent",
   backgroundClip: "text",
   textFillColor: "transparent",
+}));
+export const Number = styled(Typography)(({ theme }) => ({
+  // color: `${[theme.palette.primary.main]}`,
+  width: "fit-content",
+  fontWeight: 700,
+  textAlign: "center",
+}));
+export const BottomText = styled(Typography)(({ theme }) => ({
+  // color: `${[theme.palette.primary.main]}`,
+  // fontWeight: 600,
 }));
 
 // Flipping Card Operation.
@@ -57,7 +48,8 @@ export const Body = styled("div")(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  gap: "1rem",
+  gap: "2rem",
+  padding: "1rem",
   [theme.breakpoints.up("sm")]: {
     flexDirection: "row",
     margin: "3rem auto",
@@ -126,10 +118,10 @@ export const Front = styled(Faces)(({ theme, bg }) => ({
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   color: "#ccc",
-  position: "relative",
-  // backgroundColor: "#212121",
   border: "1px solid #2e2e2e",
   overflow: "hidden",
+  // backgroundColor: "#212121",
+  // position: "relative",
   "&::before": {
     content: '""',
     position: "absolute",
@@ -137,12 +129,10 @@ export const Front = styled(Faces)(({ theme, bg }) => ({
     right: 0,
     height: "100%",
     width: "100%",
-    zIndex: -1,
+    zIndex: 2,
     // filter: "blur(5px)",
     // backgroundImage: "linear-gradient(45deg, #ddd, #ccc)",
-    background: `linear-gradient(248deg, ${[
-      theme.palette.secondary.main,
-    ]}, #1D0835, #1D0835)`,
+    background: `linear-gradient(248deg, #09192c47, #290d198a, #01020199)`,
   },
 }));
 export const Back = styled(Faces)(({ theme }) => ({

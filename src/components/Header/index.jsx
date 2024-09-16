@@ -13,7 +13,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import logo from "../../assets/images/logo/logo.png";
 import { Button, IconButton } from "@mui/material";
-import { TextGradient } from "../../sections/Hero/styles";
+// import { TextGradient } from "../../sections/Hero/styles";
 import Drawer from "./Drawer";
 // import { useTheme } from "@mui/material/";
 
@@ -38,16 +38,16 @@ const Header = React.memo(() => {
     >
       <InnerWrapper>
         <Link to={HOME}>
-          <TextGradient>
-            <Stack direction="row">
-              <LogoWrapper>
-                <Logo src={logo} alt="vector logo" />
-              </LogoWrapper>
-              <Typography variant="h6" fontWeight={700}>
-                ectorWorks
-              </Typography>
-            </Stack>
-          </TextGradient>
+          {/* <TextGradient> */}
+          <Stack direction="row">
+            <LogoWrapper>
+              <Logo src={logo} alt="vector logo" />
+            </LogoWrapper>
+            <Typography variant="h6" fontWeight={700} color="#fff">
+              VECTORWORKS
+            </Typography>
+          </Stack>
+          {/* </TextGradient> */}
         </Link>
         <Nav>
           <Ul>

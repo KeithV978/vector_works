@@ -15,26 +15,9 @@ let theme = createTheme({
     background: "#1c1c1c",
   },
   typography: {
-    fontFamily: "Ubuntu-Regular, Rowdies-Bold,  Arial, sans-serif",
+    fontFamily: "Montserrat, Ubuntu-Regular, Rowdies-Bold,  Arial, sans-serif",
     h1: {
-      fontFamily: '"Rowdies-Bold", "Open-Sans"',
-      color: "#fff",
-    },
-    h2: {
-      fontFamily: '"Ubuntu-Bold", "Open-Sans"',
-      color: "#fff",
-    },
-    h3: {
-      fontFamily: '"Ubuntu-Bold", "Open-Sans"',
-      color: "#fff",
-    },
-    h4: {
-      fontFamily: '"Ubuntu-Bold", "Open-Sans"',
-      color: "#fff",
-      fontWeight: 700,
-    },
-    h6: {
-      fontFamily: '"Ubuntu-Bold", "Open-Sans"',
+      fontFamily: '"Montserrat", "Open-Sans"',
       color: "#fff",
     },
     body1: {

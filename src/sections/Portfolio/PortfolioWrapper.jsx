@@ -23,6 +23,7 @@ import one from "../../assets/images/portfolio/d.png";
 import two from "../../assets/images/portfolio/a.png";
 import three from "../../assets/images/portfolio/c.png";
 import four from "../../assets/images/portfolio/b.png";
+// import five from "../../assets/images/portfolio/f.png";
 
 export const PortfolioWrapper = () => {
   return (

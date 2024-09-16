@@ -10,9 +10,21 @@ const index = () => {
           {["Dolanduck", "$HIGH", "$WIFBAG", "$BARKLORD", "ETHBOMB"].map(
             (item, index) => {
               return (
-                <Slide key={index}>
+                <Slide key={index} className="slide">
                   {/* <img src={item} height="100" width="250" alt="" /> */}
-                  <Typography variant="h3">{item}</Typography>
+                  <Typography variant="h4">{item}</Typography>
+                </Slide>
+              );
+            }
+          )}
+        </SlideTrack>
+        <SlideTrack>
+          {["Dolanduck", "$HIGH", "$WIFBAG", "$BARKLORD", "ETHBOMB"].map(
+            (item, index) => {
+              return (
+                <Slide key={index} className="slide">
+                  {/* <img src={item} height="100" width="250" alt="" /> */}
+                  <Typography variant="h4">{item}</Typography>
                 </Slide>
               );
             }
