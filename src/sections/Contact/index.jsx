@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Input, InputWrapper, Textarea, Wrapper } from "./styles";
 import {
+  Contact02Icon,
   Mail02Icon,
   Message01Icon,
   // MessageUser02Icon,
@@ -9,20 +10,46 @@ import {
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { Links } from "./Links";
+import { PlaneSection } from "./PlaneSection";
+// import { useTheme } from "@mui/material";
 
 export const Contact = () => {
+  // const theme = useTheme();
+
   return (
     <Wrapper>
-      <Links />
       <Form component="form" noValidate>
         <Typography
           variant="h4"
-          textAlign="center"
-          sx={{ color: "tertiary.main" }}
+          fontWeight={600}
+          sx={{
+            marginBottom: "1rem",
+            // textAlign: "center",
+            display: "flex",
+          }}
         >
-          {" "}
-          Get In Touch
+          <span
+            style={
+              {
+                // backgroundColor: `${[theme.palette.tertiary.main]}`,
+                // display: "flex",
+                // justifyContent: "center",
+                // alignItems: "center",
+                // borderRadius: "50%",
+                // width: "35px",
+                // height: "35px",
+              }
+            }
+          >
+            <Contact02Icon />{" "}
+          </span>
+          <span
+            style={{
+              marginLeft: ".5rem",
+            }}
+          >
+            Contact Us
+          </span>
         </Typography>
         <InputWrapper>
           <UserIcon
@@ -61,7 +88,7 @@ export const Contact = () => {
             sx={{
               backgroundColor: "tertiary.main",
               borderRadius: "15px",
-              width: "50%",
+              width: { xs: "100%", sm: "80%" },
               color: "#fff",
             }}
           >
@@ -70,6 +97,7 @@ export const Contact = () => {
           </Button>
         </Box>
       </Form>
+      <PlaneSection />
     </Wrapper>
   );
 };

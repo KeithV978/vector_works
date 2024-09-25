@@ -1,13 +1,13 @@
 import React from "react";
 import { Hero } from "../../sections/Hero";
-// import About from "../../sections/About";
+import About from "../../sections/About";
 import Container from "@mui/material/Container";
 import { Services } from "../../sections/Services";
 import { Portfolio } from "../../sections/Portfolio";
-// import { Contact } from "../../sections/Contact";
+import { Contact } from "../../sections/Contact";
 import ProjectsLogos from "../../sections/ProjectsLogos";
-// import { FAQs } from "../../sections/FAQs";
-// import { Footer } from "../../components/Footer";
+import { FAQs } from "../../sections/FAQs";
+import { Footer } from "../../components/Footer";
 
 const Home = () => {
   document.title = "Vector Works";
@@ -18,12 +18,12 @@ const Home = () => {
         <ProjectsLogos />
         <Services />
         <Portfolio />
-        {/* <About /> */}
-        {/* 
+        <About />
+
         <FAQs />
-        <Contact /> */}
+        <Contact />
       </Container>
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 };

@@ -28,6 +28,9 @@ let theme = createTheme({
       // fontFamily: '"Comme"',
       color: "#fff",
     },
+    body6: {
+      color: "#fff",
+    },
   },
   breakpoints: {
     values: {

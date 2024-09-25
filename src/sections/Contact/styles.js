@@ -1,20 +1,28 @@
 import { styled } from "@mui/material";
 import Box from "@mui/material/Box";
+import backgroundCover from "../../assets/images/contact/backgroundCover.jpg";
 
 export const Wrapper = styled("section")(({ theme }) => ({
   minHeight: "600px",
   width: "100%",
+  marginTop: "100px",
   display: "flex",
   position: "relative",
   flexDirection: "column",
-  justifyContent: "center",
+  justifyContent: "space-evenly",
+  alignItems: "center",
+
+  // borderTop: "2px solid #fff",
   // backgroundColor: `${[theme.palette.secondary.main]}`,
-  // border: "5px solid #fff",
   // transform: "translate(-50%, -50%)",
 
   [theme.breakpoints.up("sm")]: {
+    backgroundImage: `url('${backgroundCover}')`,
+    backgroundSize: "100%",
+    // backgroundPosition: "right",
+    backgroundRepeat: "no-repeat",
     flexDirection: "row",
-    justifyContent: "space-between",
+    boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.65)",
 
     "&::before": {
       // content: '""',
@@ -38,12 +46,13 @@ export const Wrapper = styled("section")(({ theme }) => ({
 // #ad1457
 
 export const Form = styled(Box)(({ theme }) => ({
-  minWidth: "320px",
+  // border: "1px solid red",
+  width: "100%",
   borderRadius: "20px",
   float: "right",
   padding: "1rem",
   // backgroundImage: `linear-gradient(272deg, #AD1457, #8E24AA)`,
-  backgroundColor: "#2b2b2b",
+  // backgroundColor: "#2b2b2b",
   [theme.breakpoints.up("sm")]: {
     width: "380px",
     backgroundColor: "none",
@@ -97,5 +106,18 @@ export const Textarea = styled("textarea")(({ theme }) => ({
   "&:focus": {
     backgroundColor: "transparent",
     color: "#fff",
+  },
+}));
+export const PlanSectionWrapper = styled("div")(({ theme }) => ({
+  width: "40%",
+}));
+export const Image = styled("img")(({ theme }) => ({
+  width: "80%",
+  rotate: "45deg",
+  display: "none",
+  [theme.breakpoints.up("sm")]: {
+    display: "block",
+    width: "60%",
+    // height: "400px",
   },
 }));

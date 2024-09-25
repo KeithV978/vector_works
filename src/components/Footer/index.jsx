@@ -1,14 +1,14 @@
 import React from "react";
-import { Logo, Wrapper } from "./styles";
-import Typography from "@mui/material/Typography";
+import { Wrapper } from "./styles";
+// import Typography from "@mui/material/Typography";
 
 export const Footer = () => {
   return (
     <Wrapper>
-      <Logo />
+      {/* <Logo />
       <Typography variant="body1" textAlign="center">
         VectorWorks
-      </Typography>
+      </Typography> */}
     </Wrapper>
   );
 };

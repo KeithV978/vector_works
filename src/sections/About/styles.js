@@ -9,7 +9,9 @@ export const Wrapper = styled("section")(({ theme }) => ({
   alignItems: "center",
   flexDirection: "column",
   [theme.breakpoints.up("sm")]: {
-    minHeight: "700px",
+    minHeight: "600px",
+    width: "95%",
+    margin: "0 auto",
   },
 }));
 export const ImageWrapper = styled("div")(({ theme }) => ({
@@ -18,7 +20,7 @@ export const ImageWrapper = styled("div")(({ theme }) => ({
 
   [theme.breakpoints.up("sm")]: {
     minWidth: "320px",
-    marginLeft: "2rem",
+    marginLeft: "1rem",
   },
 
   "&::before": {
@@ -56,15 +58,13 @@ export const Colorbar = styled("span")(({ theme }) => ({
   ]}) 1%`,
 }));
 
-// export const TitleText = styled("div")(({ theme }) => ({
-//   display: "flex",
-//   alignItems: "center",
-//   width: "max-content",
-//   background: `linear-gradient(50deg, ${[theme.palette.primary.main]}, ${[
-//     theme.palette.secondary.main,
-//   ]}) 10%`,
-//   webkitBackgroundClip: "text",
-//   webkitTextFillColor: "transparent",
-//   backgroundClip: "text",
-//   textFillColor: "transparent",
-// }));
+export const TitleText = styled("div")(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  width: "max-content",
+  background: `linear-gradient(50deg, #d28928 5%, #d710f9)`,
+  webkitBackgroundClip: "text",
+  webkitTextFillColor: "transparent",
+  backgroundClip: "text",
+  textFillColor: "transparent",
+}));

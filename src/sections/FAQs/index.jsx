@@ -5,7 +5,7 @@ import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { Titletext, Wrapper } from "./styles";
+import { Wrapper } from "./styles";
 import { ArrowRight01Icon } from "hugeicons-react";
 // import faqs from "../../assets/images/faqs/faqs.png";
 import Stack from "@mui/material/Stack";
@@ -57,9 +57,11 @@ export const FAQs = () => {
   };
   return (
     <Wrapper>
-      <Titletext>
-        <Typography variant="h1">FAQs</Typography>
-      </Titletext>
+      {/* <Titletext> */}
+      <Typography variant="h2" fontWeight={600} marginBottom={4}>
+        Frequently Asked Questions
+      </Typography>
+      {/* </Titletext> */}
       <Stack direction="row" sx={{ marginRight: "2rem" }}>
         {/* <img
           src={faqs}
@@ -75,12 +77,12 @@ export const FAQs = () => {
               aria-controls="panel1d-content"
               id="panel1d-header"
             >
-              <Typography variant="h6">
+              <Typography variant="h6" sx={{ color: "#fff" }}>
                 How long does it take to launch a web3 project?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography variant="h6">
+              <Typography variant="h6" sx={{ color: "#fff" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
                 eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -97,12 +99,12 @@ export const FAQs = () => {
               aria-controls="panel2d-content"
               id="panel2d-header"
             >
-              <Typography variant="h6">
+              <Typography variant="h6" sx={{ color: "#fff" }}>
                 Are there any customer support available?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography variant="h6">
+              <Typography variant="h6" sx={{ color: "#fff" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
                 eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -119,7 +121,7 @@ export const FAQs = () => {
               aria-controls="panel3d-content"
               id="panel3d-header"
             >
-              <Typography variant="h6">
+              <Typography variant="h6" sx={{ color: "#fff" }}>
                 How much does a web3 landing page cost?
               </Typography>
             </AccordionSummary>

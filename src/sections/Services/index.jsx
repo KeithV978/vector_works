@@ -66,8 +66,8 @@ export const Services = () => {
               icon: web,
             },
             {
-              title: "Web",
-              text: "We build stylish, modern and useful web apps and sites. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+              title: "Telegram Bots",
+              text: "We build very useful and highly functional telegram bots. amet, consectetur adipiscing elit, sed do",
               icon: web,
             },
             {
