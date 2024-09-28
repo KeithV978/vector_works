@@ -1,27 +1,19 @@
 import { styled } from "@mui/material";
 import Typography from "@mui/material/Typography";
-// import Button from "@mui/material/Button";
-// import bg from "../../assets/images/services/background.png";
+import bg from "../../assets/images/services/d.png";
 
 export const Wrapper = styled("section")(({ theme }) => ({
   minHeight: "700px",
-  // backgroundImage: `url('${bg}')`,
   backgroundSize: "30%",
   backgroundRepeat: "repeat",
   backgroundPosition: "center",
-  padding: "1rem",
-  borderRadius: "30px",
+  paddingTop: "50px",
 }));
 export const Cards = styled("div")(({ theme }) => ({
-  // width: "100%",
   display: "flex",
   flexWrap: "wrap",
-  // justifyContent: "space-evenly",
   gap: "1rem",
   margin: "2rem auto",
-  [theme.breakpoints.up("sm")]: {
-    // width: "fit-content",
-  },
 }));
 export const Card = styled("div")(({ theme }) => ({
   backgroundColor: "#212121",
@@ -29,6 +21,13 @@ export const Card = styled("div")(({ theme }) => ({
   maxWidth: "380px",
   borderRadius: "10px",
   padding: "1.5rem",
+  backgroundImage: `url(${bg})`,
+  backgroundSize: "contain",
+  backgroundRepeat: "no-repeat",
+  // backgroundPositionX: "-70px",
+  // backgroundPositionY: "70px",
+  backgroundPosition: "center",
+  boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.76)",
 }));
 export const CardTitle = styled(Typography)(({ theme }) => ({
   // color: `${[theme.palette.primary.main]}`,
@@ -50,12 +49,13 @@ export const CardImageWrapper = styled("div")(({ theme }) => ({
     width: "100%",
     position: "absolute",
     // zIndex: -1,
+    // borderRadius: "50%",
     top: 0,
     left: 0,
-    backgroundColor: "#1750d529",
-    filter: "blur(5px)",
+    backgroundColor: "#9417d51c",
+    filter: "blur(2px)",
   },
 }));
 export const CardImage = styled("img")(({ theme }) => ({
-  width: "30px",
+  width: "40px",
 }));

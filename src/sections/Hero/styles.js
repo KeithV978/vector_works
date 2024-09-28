@@ -1,71 +1,26 @@
 import { styled } from "@mui/material";
-// import Stack from "@mui/material/Stack";
-// import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
 import heroImage from "../../assets/images/hero/hand1.png";
 
 export const Wrapper = styled("section")(({ theme }) => ({
   width: "100%",
-  // minHeight: "100vh",
   display: "flex",
   justifyContent: "center",
-  alignItems: "center",
+  alignItems: "flex-end",
   position: "relative",
-  minHeight: "800px",
+  minHeight: "450px",
   [theme.breakpoints.up("sm")]: {
-    // width: "90%",
-    // borderRight: "2px solid #ccc",
+    minHeight: "800px",
+    alignItems: "center",
   },
-  // background: `linear-gradient(180deg, transparent 50%, #1c1c1c)`,
-  // "&::before": {
-  //   content: '""',
-  //   position: "absolute",
-  //   // top: "50%",
-  //   right: "55%",
-  //   // transform: "translate(-50%, -50%)",
-  //   height: "700px",
-  //   width: "25%",
-  //   // backgroundColor: `${[theme.palette.secondary.main]}`,
-  //   zIndex: -10,
-  //   filter: "blur(55px)",
-  //   rotate: "-90deg",
-  //   border: "5px solid #fff",
-  //   background: `linear-gradient(248deg, ${[
-  //     theme.palette.secondary.main,
-  //   ]}, #1D0835, #1D0835)`,
-  // },
-  // "&::after": {
-  //   content: '""',
-  //   position: "absolute",
-  //   // top: "50%",
-  //   left: "55%",
-  //   // transform: "translate(-50%, -50%)",
-  //   height: "700px",
-  //   width: "25%",
-  //   filter: "blur(55px)",
-  //   zIndex: -10,
-  //   rotate: "-45deg",
-  //   border: "5px solid #fff",
-  //   // backgroundColor: `${[theme.palette.secondary.main]}`,
-  //   background: `linear-gradient(248deg, ${[
-  //     theme.palette.secondary.main,
-  //   ]}, #1D0835, #1D0835)`,
-  // },
 }));
 export const HeroContents = styled("div")(({ theme }) => ({
   width: "100%",
-  // display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  [theme.breakpoints.up("sm")]: {
-    // flexDirection: "row",
-    // width: "90%",
-  },
 }));
 export const HeroImage = styled("div")(({ theme }) => ({
-  // display: "flex",
-  // justifyContent: "right",
   backgroundImage: `url('${heroImage}')`,
   backgroundPosition: "center",
   backgroundSize: "contain",
@@ -84,11 +39,11 @@ export const Image = styled("img")(({ theme }) => ({
 
 export const HeroText = styled("div")(({ theme }) => ({
   width: "100%",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  padding: "1rem",
+  // display: "flex",
+  // flexDirection: "column",
+  // justifyContent: "center",
   [theme.breakpoints.up("sm")]: {
+    padding: "1rem",
     margin: "0 auto",
     width: "60%",
     // paddingLeft: "20rem",

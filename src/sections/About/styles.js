@@ -7,10 +7,10 @@ export const Wrapper = styled("section")(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  flexDirection: "column",
+  // flexDirection: "column",
   [theme.breakpoints.up("sm")]: {
-    minHeight: "600px",
-    width: "95%",
+    minHeight: "450px",
+    width: "100%",
     margin: "0 auto",
   },
 }));

@@ -32,10 +32,10 @@ export const Services = () => {
           variant="h4"
           sx={{
             textAlign: "center",
+            fontWeight: 600,
           }}
         >
-          <span style={{ color: `#46d6ec` }}>What We Can </span>
-          Do For You.
+          What We Can Do For You.
         </Typography>
         <Typography variant="body1" textAlign="center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -61,7 +61,7 @@ export const Services = () => {
               icon: graphics,
             },
             {
-              title: "Web",
+              title: "Web Design",
               text: "We build stylish, modern and useful web apps and sites. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
               icon: web,
             },
@@ -81,7 +81,9 @@ export const Services = () => {
                 <CardImageWrapper>
                   <CardImage src={item.icon} />
                 </CardImageWrapper>
-                <CardTitle variant="h6">{item.title}</CardTitle>
+                <CardTitle variant="h6" fontWeight={700}>
+                  {item.title}
+                </CardTitle>
                 <CardText variant="body1">{item.text}</CardText>
               </Card>
             );

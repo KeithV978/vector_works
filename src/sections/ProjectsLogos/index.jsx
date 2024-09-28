@@ -1,13 +1,12 @@
-import React from "react";
 import { Slide, Slider, SlideTrack, Wrapper } from "./styles";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 
 const index = () => {
   return (
     <Wrapper>
       <Slider>
         <SlideTrack>
-          {["Dolanduck", "$HIGH", "$WIFBAG", "$BARKLORD", "ETHBOMB"].map(
+          {["dolanduck", "$high", "$wifbag", "$barklord", "EthBomb"].map(
             (item, index) => {
               return (
                 <Slide key={index} className="slide">

@@ -33,7 +33,7 @@ export const Portfolio = () => {
             fontWeight={600}
             sx={{
               borderLeft: {
-                sm: `2px solid ${[theme.palette.primary.main]}`,
+                sm: `3px solid ${[theme.palette.primary.main]}`,
                 xs: "none",
               },
               paddingLeft: { sm: "2rem", xs: "" },

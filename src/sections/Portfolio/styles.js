@@ -1,7 +1,7 @@
 import { styled } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import backgroundCover from "../../assets/images/portfolio/card_bg.png";
+import bg from "../../assets/images/portfolio/card_bg.png";
 const card_radius = "1rem";
 
 export const Wrapper = styled(Box)(({ theme }) => ({
@@ -11,7 +11,7 @@ export const Wrapper = styled(Box)(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "space-between",
   // alignItems: "center",
-  padding: "3rem 2rem",
+  padding: "1rem",
   [theme.breakpoints.up("sm")]: {
     padding: "3rem 0",
     flexDirection: "row",
@@ -34,25 +34,18 @@ export const Number = styled(Typography)(({ theme }) => ({
   width: "fit-content",
   fontWeight: 700,
   textAlign: "center",
+  letterSpacing: 5,
+  [theme.breakpoints.up("sm")]: {
+    letterSpacing: 10,
+  },
 }));
-export const BottomText = styled(Typography)(({ theme }) => ({
-  // color: `${[theme.palette.primary.main]}`,
-  // fontWeight: 600,
-}));
+export const BottomText = styled(Typography)(({ theme }) => ({}));
 
 // Flipping Card Operation.
 export const Body = styled("div")(({ theme }) => ({
   width: "100%",
   textAlign: "center",
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "space-between",
-  gap: "1rem",
-  flexWrap: "wrap",
-  // whiteSpace: "nowrap",
-  // position: "relative",
   [theme.breakpoints.up("sm")]: {
-    // minHeight: "500px",
     margin: "3rem auto",
   },
 }));
@@ -66,7 +59,7 @@ export const Card = styled("div")(({ theme }) => ({
     cursor: "pointer",
     transform: "rotateY(180deg)",
   },
-  height: "100%",
+  height: "40vh",
   position: "relative",
   transition: "all ease 1000ms",
   transformStyle: "preserve-3d",
@@ -89,8 +82,8 @@ const Faces = styled("div")(({ theme }) => ({
   alignItems: "center",
 }));
 
-export const Front = styled(Faces)(({ theme, bg }) => ({
-  backgroundImage: `url('${backgroundCover}')`,
+export const Front = styled(Faces)(({ theme }) => ({
+  backgroundImage: `url('${bg}')`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   color: "#ccc",
@@ -98,18 +91,23 @@ export const Front = styled(Faces)(({ theme, bg }) => ({
   // position: "relative",
   // "&:hover": {
   // },
-  boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.3)",
+  boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.765)",
   // borderBottom: `2px solid #ccc`,
   // backgroundColor: "#cccccc14",
 }));
-export const Back = styled(Faces)(({ theme, bg }) => ({
+export const Back = styled(Faces)(({ theme }) => ({
   backgroundColor: "#1c1c1c",
+  // backgroundImage: `url('${frontCover}')`,
+  // backgroundSize: "cover",
+  // backgroundRepeat: "no-repeat",
   transform: "rotateY(180deg)",
   color: "#ccc",
   padding: "1rem",
   overflowWrap: "break-word",
   wordBreak: "break-word",
-  border: `1px solid #ccc`,
+  // border: `1px solid #ccc`,
+  boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.5)",
+
   // width: "min-content",
   // inlineSize: "min-content",
   [theme.breakpoints.up("sm")]: {
@@ -117,8 +115,8 @@ export const Back = styled(Faces)(({ theme, bg }) => ({
   },
 }));
 export const ImageWrapper = styled("div")(({ theme, src }) => ({
-  width: "50px",
-  height: "50px",
+  width: "100px",
+  height: "100px",
   borderRadius: "50%",
   border: "3px solid #ccc",
   background: "#1c1c1c",
@@ -142,17 +140,23 @@ export const Image = styled("div")(({ theme, src }) => ({
   backgroundPosition: "center",
 }));
 export const CarouselWrapper = styled(Box)(({ theme, src }) => ({
+  height: "40vh",
   width: "100%",
   // minHeight: "200px",
   margin: "auto",
   border: "1px solid #1c1c1c",
   borderRadius: card_radius,
   // backgroundColor: "#1750d529",
-  backgroundColor: "#cccccc14",
+  // backgroundColor: "#cccccc14",
+  backgroundImage: `url('${bg}')`,
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.782)",
   position: "relative",
   [theme.breakpoints.up("sm")]: {
     height: "300px",
   },
+  "& .react-multi-carousel-list": { height: "100%" },
 }));
 export const CarouselTexts = styled(Box)(({ theme }) => ({
   // position: "absolute",

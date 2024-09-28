@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Colorbar,
-  ImageWrapper,
+  // ImageWrapper,
   TitleText,
   // TitleText,
   Wrapper,
@@ -10,12 +10,12 @@ import {
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
-import phonelap from "../../assets/images/about/web3world.png";
-import { useTheme } from "@mui/material";
+// import phonelap from "../../assets/images/about/web3world.png";
+// import { useTheme } from "@mui/material";
 // import { PaintBrush04Icon } from "hugeicons-react";
 
 const About = () => {
-  const theme = useTheme();
+  // const theme = useTheme();
   return (
     <Wrapper id="about">
       <Stack
@@ -27,25 +27,25 @@ const About = () => {
         }}
       >
         <Typography
-          variant="body1"
+          variant="h6"
           sx={{
-            textAlign: { sm: "justify", xs: "initial" },
+            textAlign: { sm: "justify", xs: "justify" },
             lineHeight: "25px",
           }}
         >
           {/* <TitleText> */}
           {/* <PaintBrush04Icon color="inherit" width="50px" height="50px" /> */}
-          <Box sx={{ display: "flex" }}>
+          <Box sx={{ display: "flex", flexDirection: "row" }}>
             <TitleText>
               <Typography
-                variant="h2"
+                variant="h3"
                 fontWeight={600}
                 sx={{
                   borderLeft: {
                     // sm: `5px solid ${[theme.palette.primary.main]}`,
                     // xs: "none",
                   },
-                  color: `${[theme.palette.tertiary.main]}`,
+                  // color: `${[theme.palette.tertiary.main]}`,
                   // paddingLeft: { sm: "2rem", xs: "" },
                   marginBottom: "1rem",
                   textAlign: "left",
@@ -56,7 +56,7 @@ const About = () => {
               </Typography>{" "}
             </TitleText>{" "}
             <Typography
-              variant="h2"
+              variant="h3"
               fontWeight={600}
               sx={{ color: "#fff", marginLeft: "1rem" }}
             >
@@ -70,22 +70,21 @@ const About = () => {
           printing and typesetting industry. Lorem Ipsum has been the industry's
           standard dummy text ever since the 1500s, when an unknown printer took
           a galley of type and scrambled it to make a type specimen book. It has
-          survived not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged. It was popularised in
-          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          survive It was popularised in the 1960s with the release of Letraset
+          sheets containing Lorem Ipsum
           <Colorbar sx={{ width: "10%" }} />
           passages, and more recently with desktop publishing software like
           Aldus PageMaker including versions of Lorem Ipsum. sed do eiusmod
           tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet,
           consectetur adipiscing.{" "}
         </Typography>
-        <ImageWrapper>
+        {/* <ImageWrapper>
           <img
             src={phonelap}
             alt="about us"
             style={{ display: "inline-block", width: "100%" }}
           />
-        </ImageWrapper>
+        </ImageWrapper> */}
       </Stack>
     </Wrapper>
   );

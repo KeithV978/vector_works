@@ -3,12 +3,14 @@ import { styled } from "@mui/material";
 export const Wrapper = styled("section")(({ theme }) => ({
   // minHeight: "400px",
   width: "100%",
+  minHeight: "400px",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
+  alignItems: "center",
   color: "#fff",
   [theme.breakpoints.up("sm")]: {
-    minHeight: "350px",
+    minHeight: "450px",
     width: "70%",
   },
 }));

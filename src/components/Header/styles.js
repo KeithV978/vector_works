@@ -10,17 +10,13 @@ export const Wrapper = styled("header")(({ theme }) => ({
   backdropFilter: "blur(10px)",
   background: "inherit",
   transition: "all ease .3s",
-  [theme.breakpoints.up("sm")]: {},
 }));
 export const InnerWrapper = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
   width: "100%",
-  padding: "1rem",
-  [theme.breakpoints.up("sm")]: {
-    padding: "1rem 0",
-  },
+  padding: "1rem 0",
 }));
 export const LogoWrapper = styled("div")(({ theme }) => ({
   display: "flex",

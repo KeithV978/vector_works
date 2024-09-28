@@ -13,16 +13,15 @@ const Home = () => {
   document.title = "Vector Works";
   return (
     <main style={{ width: "100%" }}>
-      <Hero />
       <Container>
+        <Hero />
         <ProjectsLogos />
+        <About />
         <Services />
         <Portfolio />
-        <About />
-
         <FAQs />
-        <Contact />
       </Container>
+      <Contact />
       <Footer />
     </main>
   );

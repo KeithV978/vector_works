@@ -58,7 +58,7 @@ export const FAQs = () => {
   return (
     <Wrapper>
       {/* <Titletext> */}
-      <Typography variant="h2" fontWeight={600} marginBottom={4}>
+      <Typography variant="h4" fontWeight={600} marginBottom={4}>
         Frequently Asked Questions
       </Typography>
       {/* </Titletext> */}
@@ -126,7 +126,7 @@ export const FAQs = () => {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography variant="h6">
+              <Typography variant="h6" sx={{ color: "#fff" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
                 eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
