@@ -8,11 +8,13 @@ import { Contact } from "../../sections/Contact";
 import ProjectsLogos from "../../sections/ProjectsLogos";
 import { FAQs } from "../../sections/FAQs";
 import { Footer } from "../../components/Footer";
+import Header from "../../components/Header";
 
 const Home = () => {
   document.title = "Vector Works";
   return (
     <main style={{ width: "100%" }}>
+      <Header />
       <Container>
         <Hero />
         <ProjectsLogos />

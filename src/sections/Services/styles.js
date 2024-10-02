@@ -56,6 +56,6 @@ export const CardImageWrapper = styled("div")(({ theme }) => ({
     filter: "blur(2px)",
   },
 }));
-export const CardImage = styled("img")(({ theme }) => ({
+export const CardImage = styled("img")(() => ({
   width: "40px",
 }));

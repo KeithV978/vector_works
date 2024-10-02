@@ -1,25 +1,49 @@
 import * as React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "../components/Header";
-import { HOME } from "../utils/links";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import { ADMIN, HOME, LOGIN } from "../utils/links";
+import { Loader } from "../components/Loader";
 
-const Home = React.lazy(() => import("../layout/Home"));
-// const About = React.lazy(() => import())
-// const Contact = React.lazy(() => import())
+const Home = React.lazy(() => import("./Home"));
+const Admin = React.lazy(() => import("./Admin"));
+const Login = React.lazy(() => import("./Login"));
 
 export const Layout = () => {
   return (
     <div className="layout">
       <Router>
-        <Header />
-        <Routes>
-          <Route path={HOME} element={<Home />} />
-          {/* <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> */}
-        </Routes>
+        <React.Suspense fallback={<Loader />}>
+          <Routes>
+            <Route path={HOME} element={<Home />} />
+            <Route path={LOGIN} element={<Login />} />
+            <Route
+              path={ADMIN}
+              element={
+                <PrivateRoute>
+                  <Admin />
+                </PrivateRoute>
+              }
+            />
+          </Routes>
+        </React.Suspense>
       </Router>
     </div>
   );
 };
 
 export default Layout;
+const isAuthenticated = () => {
+  return localStorage.getItem("authToken") ? true : false;
+};
+
+const PrivateRoute = ({ children }) => {
+  return isAuthenticated ? (
+    <React.Fragment> {children}</React.Fragment>
+  ) : (
+    <Navigate to={LOGIN} />
+  );
+};

@@ -71,7 +71,7 @@ export const Services = () => {
               icon: web,
             },
             {
-              title: "Web",
+              title: "Blockchain Consulting",
               text: "We build stylish, modern and useful web apps and sites. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
               icon: web,
             },
