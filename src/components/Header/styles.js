@@ -31,7 +31,7 @@ export const Logo = styled("img")(({ theme }) => ({
 export const Nav = styled("nav")(({ theme }) => ({
   display: "none",
   [theme.breakpoints.up("sm")]: {
-    // width: "80%",
+    width: "40%",
     display: "block",
   },
   [theme.breakpoints.up("md")]: {
@@ -44,5 +44,5 @@ export const Ul = styled("ul")(({ theme }) => ({
   listStyle: "none",
   gap: 2,
   alignItems: "center",
-  justifyContent: "center",
+  justifyContent: "space-between",
 }));

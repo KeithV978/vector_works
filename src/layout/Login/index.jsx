@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useForm } from "react-hook-form";
 import { ErrorMessage, FormWrapper, Wrapper } from "./style";
-import { Input, InputWrapper } from "../../sections/Contact/styles";
+import { Input, InputWrapper } from "../../components/Contact/styles";
 import { ManagerIcon } from "hugeicons-react";
 
 const Login = () => {

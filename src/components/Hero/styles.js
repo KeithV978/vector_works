@@ -1,6 +1,7 @@
 import { styled } from "@mui/material";
 import { motion } from "framer-motion";
-import heroImage from "../../assets/images/hero/hand1.png";
+// import heroImage from "../../assets/images/hero/hand1.png";
+import hbg from "../../assets/images/projects/b.jpg";
 
 export const Wrapper = styled("section")(({ theme }) => ({
   width: "100%",
@@ -9,31 +10,33 @@ export const Wrapper = styled("section")(({ theme }) => ({
   alignItems: "flex-end",
   position: "relative",
   minHeight: "450px",
+  backgroundImage: `url('${hbg}')`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.5)",
   [theme.breakpoints.up("sm")]: {
-    minHeight: "800px",
+    minHeight: "550px",
     alignItems: "center",
   },
 }));
 export const HeroContents = styled("div")(({ theme }) => ({
   width: "100%",
-  flexDirection: "column",
-  justifyContent: "center",
+  display: "flex",
+  justifyContent: "space-between",
   alignItems: "center",
+  flexDirection: "column",
+  [theme.breakpoints.up("sm")]: {
+    flexDirection: "row",
+  },
 }));
 export const HeroImage = styled("div")(({ theme }) => ({
-  backgroundImage: `url('${heroImage}')`,
+  // backgroundImage: `url('${heroImage}')`,
   backgroundPosition: "center",
   backgroundSize: "contain",
   width: "100%",
   [theme.breakpoints.up("sm")]: {
     height: "400px",
-  },
-}));
-export const Image = styled("img")(({ theme }) => ({
-  width: "100%",
-  display: "block",
-  [theme.breakpoints.up("sm")]: {
-    // width: "100%",
   },
 }));
 
@@ -49,17 +52,17 @@ export const HeroText = styled("div")(({ theme }) => ({
     // paddingLeft: "20rem",
   },
 }));
-export const TextGradient = styled("div")(({ theme }) => ({
-  width: "min-content",
-  background: `linear-gradient(45deg, ${[theme.palette.secondary.main]} 10%, ${[
-    theme.palette.primary.main,
-  ]})`,
-  webkitBackgroundClip: "text",
-  webkitTextFillColor: "transparent",
-  backgroundClip: "text",
-  textFillColor: "transparent",
-  fontFamily: "Righteous-Regular",
-}));
+// export const TextGradient = styled("div")(({ theme }) => ({
+//   width: "min-content",
+//   background: `linear-gradient(45deg, ${[theme.palette.secondary.main]} 10%, ${[
+//     theme.palette.primary.main,
+//   ]})`,
+//   webkitBackgroundClip: "text",
+//   webkitTextFillColor: "transparent",
+//   backgroundClip: "text",
+//   textFillColor: "transparent",
+//   fontFamily: "Righteous-Regular",
+// }));
 
 export const BottomArrow = styled(motion.div)(({ theme }) => ({
   position: "absolute",

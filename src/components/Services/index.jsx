@@ -47,12 +47,12 @@ export const Services = () => {
           {[
             {
               title: "Smart Contract",
-              text: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+              text: " Deploy secure and self-executing contracts with our industry-leading smart contract development services.",
               icon: sc,
             },
             {
               title: "DAPPs",
-              text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum sit amet, consectetur adipiscing elit, sed do",
+              text: "We specialize in dApps that offer transparency, autonomy, and trustless environments.",
               icon: dapps,
             },
             {
@@ -72,7 +72,7 @@ export const Services = () => {
             },
             {
               title: "Blockchain Consulting",
-              text: "We build stylish, modern and useful web apps and sites. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+              text: "Not sure where to begin? Our Web3 consulting team helps you navigate blockchain opportunities. ",
               icon: web,
             },
           ].map((item, index) => {

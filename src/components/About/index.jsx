@@ -10,6 +10,8 @@ import {
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
+import { Circles } from "../Hero/styles";
+import { Link } from "react-router-dom";
 // import phonelap from "../../assets/images/about/web3world.png";
 // import { useTheme } from "@mui/material";
 // import { PaintBrush04Icon } from "hugeicons-react";
@@ -64,19 +66,18 @@ const About = () => {
             </Typography>
           </Box>
           {/* </TitleText> */}
-          <Colorbar sx={{ marginLeft: 0 }} /> Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua.Lorem Ipsum is simply dummy text of the
-          printing and typesetting industry. Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took
-          a galley of type and scrambled it to make a type specimen book. It has
-          survive It was popularised in the 1960s with the release of Letraset
-          sheets containing Lorem Ipsum
-          <Colorbar sx={{ width: "10%" }} />
-          passages, and more recently with desktop publishing software like
-          Aldus PageMaker including versions of Lorem Ipsum. sed do eiusmod
-          tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet,
-          consectetur adipiscing.{" "}
+          <Colorbar sx={{ marginLeft: 0 }} /> Welcome to the Future of the Web:
+          Web3 Solutions for Tomorrow Unlock the potential of blockchain,
+          decentralized applications (dApps), and smart contracts with our
+          cutting-edge Web3 services. Embrace the future of the internet today.
+          Build secure, scalable, and decentralized applications on popular
+          blockchain platforms like Ethereum, Binance Smart Chain, and Polkadot.
+          <Colorbar sx={{ width: "10%" }} /> From strategic planning to
+          execution, we guide businesses and startups towards adopting
+          decentralized technologies. Ready to transform your business with
+          blockchain and decentralized solutions? Contact us for a consultation
+          and take the first step toward your Web3 journey.
+          <Link to="/about">Learn More</Link>
         </Typography>
         {/* <ImageWrapper>
           <img
@@ -86,6 +87,18 @@ const About = () => {
           />
         </ImageWrapper> */}
       </Stack>
+      <Circles>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </Circles>
     </Wrapper>
   );
 };

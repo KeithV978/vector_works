@@ -5,10 +5,12 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import { ADMIN, HOME, LOGIN } from "../utils/links";
+import { ABOUT, ADMIN, HOME, LOGIN, PROJECTS } from "../utils/links";
 import { Loader } from "../components/Loader";
 
 const Home = React.lazy(() => import("./Home"));
+const Projects = React.lazy(() => import("./Projects"));
+const About = React.lazy(() => import("./About"));
 const Admin = React.lazy(() => import("./Admin"));
 const Login = React.lazy(() => import("./Login"));
 
@@ -19,6 +21,8 @@ export const Layout = () => {
         <React.Suspense fallback={<Loader />}>
           <Routes>
             <Route path={HOME} element={<Home />} />
+            <Route path={PROJECTS} element={<Projects />} />
+            <Route path={ABOUT} element={<About />} />
             <Route path={LOGIN} element={<Login />} />
             <Route
               path={ADMIN}

@@ -1,12 +1,12 @@
 import React from "react";
-import { Hero } from "../../sections/Hero";
-import About from "../../sections/About";
+import { Hero } from "../../components/Hero";
+import About from "../../components/About";
 import Container from "@mui/material/Container";
-import { Services } from "../../sections/Services";
-import { Portfolio } from "../../sections/Portfolio";
-import { Contact } from "../../sections/Contact";
-import ProjectsLogos from "../../sections/ProjectsLogos";
-import { FAQs } from "../../sections/FAQs";
+import { Services } from "../../components/Services";
+import { Portfolio } from "../../components/Portfolio";
+import { Contact } from "../../components/Contact";
+import ProjectsLogos from "../../components/ProjectsLogos";
+import { FAQs } from "../../components/FAQs";
 import { Footer } from "../../components/Footer";
 import Header from "../../components/Header";
 
@@ -15,8 +15,8 @@ const Home = () => {
   return (
     <main style={{ width: "100%" }}>
       <Header />
+      <Hero />
       <Container>
-        <Hero />
         <ProjectsLogos />
         <About />
         <Services />

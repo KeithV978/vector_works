@@ -8,7 +8,7 @@ const Wrapper = styled(Btn)(({ theme }) => ({
   borderRadius: "20px",
   boxShadow: "8px 7px 17px 0px #1e1e1e69",
   transition: "all ease .3s",
-  color: "#1c1c1c",
+  color: "#ccc",
   backgroundColor: `${[theme.palette.primary.main]}`,
   display: "flex",
   flexDirection: "column",
@@ -40,9 +40,9 @@ const Wrapper = styled(Btn)(({ theme }) => ({
     width: "200px",
   },
 }));
-export const Button = ({ children }) => {
+export const Button = ({ children, bgColor }) => {
   return (
-    <Wrapper variant="contained">
+    <Wrapper variant="contained" sx={{ backgroundColor: bgColor }}>
       <span className="action">
         <Typography
           fontWeight={600}

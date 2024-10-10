@@ -1,6 +1,6 @@
 import * as React from "react";
 import { HeroWrapper } from "../style";
-import { Textarea } from "../../../sections/Contact/styles";
+import { Textarea } from "../../../components/Contact/styles";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import { useForm } from "react-hook-form";

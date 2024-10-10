@@ -53,7 +53,12 @@ const Admin = () => {
 
       <Body>
         <Container>
-          <Box sx={{ display: { sm: "none", xs: "flex" } }}>
+          <Box
+            sx={{
+              display: { sm: "none", xs: "flex" },
+              position: "sticky",
+            }}
+          >
             <select>
               <option>sections</option>
             </select>
@@ -66,11 +71,13 @@ const Admin = () => {
               display: "flex",
               flexDirection: { xs: "column", sm: "row" },
               gap: 5,
+              // position: "relative",
             }}
           >
             <Box
               sx={{
                 width: { xs: "100%", sm: "300px" },
+                top: "1rem",
               }}
             >
               <Typography
@@ -106,6 +113,13 @@ const Admin = () => {
                           color: "#1c1c1c",
                           cursor: "pointer",
                         },
+                        // "&:focus": {
+                        //   background: `linear-gradient(205deg, ${[
+                        //     theme.palette.primary.main,
+                        //   ]}, ${[theme.palette.secondary.main]})`,
+                        //   color: "#1c1c1c",
+                        //   cursor: "pointer",
+                        // },
                       }}
                     >
                       <ListItemIcon>
