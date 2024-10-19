@@ -106,7 +106,7 @@ const index = () => {
                 color="#313131"
                 sx={{ display: "flex", alignItems: "center", gap: 1 }}
               >
-                <span style={{ color: "#898989" }}>{item.icon}</span>
+                <span style={{ color: "#414141" }}>{item.icon}</span>
                 {item.title}
               </Typography>
             );

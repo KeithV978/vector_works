@@ -1,9 +1,10 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { HOME } from "../../utils/links";
+import { ABOUT, HOME, PROJECTS } from "../../utils/links";
 import { InnerWrapper, Nav, Ul, Wrapper } from "./styles";
 import {
   MenuCircleIcon,
+  PenTool03Icon,
   // Mail01Icon,
 } from "hugeicons-react";
 import Stack from "@mui/material/Stack";
@@ -13,7 +14,7 @@ import Container from "@mui/material/Container";
 import { Button, IconButton } from "@mui/material";
 // import { TextGradient } from "../../sections/Hero/styles";
 import Drawer from "./Drawer";
-// import { useTheme } from "@mui/material/";
+import { useTheme } from "@mui/material/";
 
 const Header = React.memo(() => {
   const [scrollHeight, setScrollHeight] = React.useState(window.scrollY);
@@ -28,7 +29,7 @@ const Header = React.memo(() => {
   const handleMenuOpen = () => {
     setMenuOpen(!menuOpen);
   };
-  // const theme = useTheme();
+  const theme = useTheme();
 
   return (
     <Wrapper
@@ -42,7 +43,13 @@ const Header = React.memo(() => {
               {/* <LogoWrapper>
                 <Logo src={logo} alt="vector logo" /> 
               </LogoWrapper> */}
-              <Typography variant="h6" fontWeight={700} color="#fff">
+              <Typography
+                variant="h6"
+                fontWeight={700}
+                color="#fff"
+                sx={{ display: "flex", alignItems: "center", gap: 1 }}
+              >
+                <PenTool03Icon color={`${[theme.palette.tertiary.main]}`} />{" "}
                 Vectorworks
               </Typography>
             </Stack>
@@ -51,17 +58,17 @@ const Header = React.memo(() => {
           <Nav>
             <Ul>
               <li>
-                <Link style={{ color: "#fff" }} to="/">
+                <Link style={{ color: "#fff" }} to={HOME}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link style={{ color: "#fff" }} to="/projects">
+                <Link style={{ color: "#fff" }} to={PROJECTS}>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link style={{ color: "#fff" }} to="/about">
+                <Link style={{ color: "#fff" }} to={ABOUT}>
                   About
                 </Link>
               </li>

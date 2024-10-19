@@ -17,19 +17,23 @@ import {
 import { useTheme } from "@mui/material";
 import { Editor } from "./Editor";
 import * as React from "react";
+import { useSelector } from "react-redux";
 
 const Admin = () => {
+  const user = useSelector((state) => state.auth.auth.user);
+
   const [selection, setSelection] = React.useState("hero");
-  let username = "Miracle";
   let sections = ["hero", "about", "projects", "faqs"];
   const theme = useTheme();
+
+  console.log(user);
   return (
     <div>
       <Header>
         <Container>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <Typography variant="h6" fontWeight={600}>
-              Welcome To The Backend, {username}
+              Welcome To The Backend, {user?.username}
             </Typography>
 
             <div>

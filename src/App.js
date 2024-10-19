@@ -5,12 +5,19 @@ import { Layout } from "./layout";
 import theme from "./assets/theme";
 import "./assets/fonts/index.css";
 import "./App.css";
+import { Provider } from "react-redux";
+import { store, persistor } from "./redux/store";
+import { PersistGate } from "redux-persist/integration/react";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Layout />
-    </ThemeProvider>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <ThemeProvider theme={theme}>
+          <Layout />
+        </ThemeProvider>
+      </PersistGate>
+    </Provider>
   );
 }
 
