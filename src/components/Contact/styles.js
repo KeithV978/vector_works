@@ -11,7 +11,7 @@ export const Wrapper = styled("section")(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-
+  padding: ".5rem",
   [theme.breakpoints.up("sm")]: {
     marginTop: "100px",
     backgroundImage: `url('${backgroundCover}')`,

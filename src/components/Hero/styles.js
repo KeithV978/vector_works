@@ -15,6 +15,7 @@ export const Wrapper = styled("section")(({ theme }) => ({
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   boxShadow: "inset 0 0 0 1000px rgba(0,0,0,.5)",
+  paddingBottom: "2rem",
   [theme.breakpoints.up("sm")]: {
     minHeight: "550px",
     alignItems: "center",

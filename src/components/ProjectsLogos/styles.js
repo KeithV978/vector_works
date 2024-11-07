@@ -1,7 +1,7 @@
 import { styled } from "@mui/material";
 
 export const Wrapper = styled("section")(({ theme }) => ({
-  width: "80%",
+  width: "100%",
   [theme.breakpoints.up("sm")]: {
     margin: "2rem auto",
   },
@@ -16,7 +16,7 @@ export const Slider = styled("div")(({ theme }) => ({
   alignItems: "center",
   "&:before": {
     content: "''",
-    height: "200px",
+    height: "150px",
     position: "absolute",
     width: "100px",
     zIndex: 2,
@@ -27,7 +27,7 @@ export const Slider = styled("div")(({ theme }) => ({
 
   "&:after": {
     content: "''",
-    height: "100px",
+    height: "150px",
     position: "absolute",
     width: "100px",
     zIndex: 2,
@@ -43,10 +43,10 @@ export const Slider = styled("div")(({ theme }) => ({
 
   [theme.breakpoints.up("sm")]: {
     "&:before": {
-      height: "200px",
+      height: "150px",
     },
     "&:after": {
-      height: "200px",
+      height: "150px",
     },
   },
 }));

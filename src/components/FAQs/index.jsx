@@ -45,7 +45,7 @@ const AccordionSummary = styled((props) => (
 }));
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-  padding: theme.spacing(2),
+  padding: theme.spacing(1),
   borderTop: "1px solid rgba(225, 225, 225, .125)",
 }));
 
@@ -58,7 +58,11 @@ export const FAQs = () => {
   return (
     <Wrapper>
       {/* <Titletext> */}
-      <Typography variant="h4" fontWeight={600} marginBottom={4}>
+      <Typography
+        variant="h4"
+        fontWeight={600}
+        sx={{ marginBottom: { sm: "4px", xs: "2px" } }}
+      >
         Frequently Asked Questions
       </Typography>
       {/* </Titletext> */}

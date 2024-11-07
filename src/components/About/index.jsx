@@ -13,11 +13,11 @@ import Stack from "@mui/material/Stack";
 import { Circles } from "../Hero/styles";
 import { Link } from "react-router-dom";
 // import phonelap from "../../assets/images/about/web3world.png";
-// import { useTheme } from "@mui/material";
+import { useTheme } from "@mui/material";
 // import { PaintBrush04Icon } from "hugeicons-react";
 
 const About = () => {
-  // const theme = useTheme();
+  const theme = useTheme();
   return (
     <Wrapper id="about">
       <Stack
@@ -31,13 +31,15 @@ const About = () => {
         <Typography
           variant="h6"
           sx={{
-            textAlign: { sm: "justify", xs: "justify" },
+            textAlign: { sm: "justify", xs: "left" },
             lineHeight: "25px",
           }}
         >
           {/* <TitleText> */}
           {/* <PaintBrush04Icon color="inherit" width="50px" height="50px" /> */}
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
+          <Box
+            sx={{ display: { sm: "flex", xs: "none" }, flexDirection: "row" }}
+          >
             <TitleText>
               <Typography
                 variant="h3"
@@ -65,6 +67,20 @@ const About = () => {
               your visions
             </Typography>
           </Box>
+          <Box sx={{ display: { sm: "none", xs: "block" } }}>
+            <TitleText>
+              <Typography
+                variant="h3"
+                fontWeight={600}
+                sx={{
+                  marginBottom: "1rem",
+                  textAlign: "left",
+                }}
+              >
+                We build your visions
+              </Typography>
+            </TitleText>
+          </Box>
           {/* </TitleText> */}
           <Colorbar sx={{ marginLeft: 0 }} /> Welcome to the Future of the Web:
           Web3 Solutions for Tomorrow Unlock the potential of blockchain,
@@ -77,7 +93,13 @@ const About = () => {
           decentralized technologies. Ready to transform your business with
           blockchain and decentralized solutions? Contact us for a consultation
           and take the first step toward your Web3 journey.
-          <Link to="/about">Learn More</Link>
+          <Link
+            to="/about"
+            style={{ color: `${[theme.palette.tertiary.main]}` }}
+          >
+            {" "}
+            Learn More
+          </Link>
         </Typography>
         {/* <ImageWrapper>
           <img
